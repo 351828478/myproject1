@@ -1,0 +1,1095 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-size: 12px;
+}
+.all{
+    background: url(http://dota.uuu9.com/skin201510/images/headbg.jpg) center top no-repeat;
+}
+.header {
+    min-height: 310px;
+    background: url(http://dota.uuu9.com/skin201510/images/nav.png) center top no-repeat;
+}
+.dotatopbar {
+
+    height: 75px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+.dotanav {
+    width: 980px;
+    margin: auto;
+    padding-top: 11px;
+    background: url(http://dota.uuu9.com/skin201510/images/nav.png) center top no-repeat;
+    height: 55px;
+}
+.nav_div {
+    background: url(http://dota.uuu9.com/skin201510/images/nav_hover.png) -9999px -9999px no-repeat;
+    float: left;
+}
+.nav_div a,.nav_div_r a {
+    display: block;
+    width: 90px;
+    height: 66px;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+.nav_div_r{
+    background: url(http://dota.uuu9.com/skin201510/images/nav_hover.png) -9999px -9999px no-repeat;
+    float: right;
+}
+.navlist {
+    width: 980px;
+    padding-top: 65px;
+    margin: auto;
+    position: relative;
+    min-height: 174px;
+}
+.navlist .ul_left {
+    width: 90px;
+    height: 174px;
+    float: left;
+    display: block;
+    opacity: 0.5;
+    padding-top: 10px;
+}
+.navlist ul a {
+    display: block;
+    color: #ccc;
+    line-height: 25px;
+    text-shadow: #000 1px 1px 0px;
+    text-align: center;
+    position: relative;
+}
+.navlist .ul_right {
+    width: 90px;
+    height: 174px;
+    float: right;
+    display: block;
+    opacity: 0.5;
+    padding-top: 10px;
+}
+.logo2 {
+    width: 220px;
+    height: 110px;
+    display: block;
+    position: absolute;
+    top: 215px;
+    left: -250px;
+    text-indent: -9999px;
+}
+.erwm3 {
+    color: #fff;
+    text-shadow: #000 1px 1px 0px;
+    text-align: center;
+    background: url(http://dota.uuu9.com/skin201510/images/eee.png) -75px 0 no-repeat;
+    width: 75px;
+    height: 30px;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    padding-top: 75px;
+}
+.navlist ul a .icon_h {
+    height: 11px;
+    width: 11px;
+    display: block;
+    background: url(http://dota.uuu9.com/skin201510/images/miniui.png) -89px -570px no-repeat;
+    position: absolute;
+    left: 5px;
+    top: 6px;
+}
+.navlist ul a .icon_n {
+    height: 11px;
+    width: 11px;
+    display: block;
+    background: url(http://dota.uuu9.com/skin201510/images/miniui.png) -89px -581px no-repeat;
+    position: absolute;
+    left: 5px;
+    top: 6px;
+}
+.nav_div_center {
+    width: 260px;
+    float: left;
+    display: block;
+    position: relative;
+    margin: -230px auto;
+    z-index: 200;
+}
+.dota2logo,.dota1logo{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.sousuo {
+    height: 40px;
+    width: 180px;
+    position: absolute;
+    right: 110px;
+    bottom: -1px;
+}
+.searchtext {
+    background: none;
+    border: none;
+    height: 20px;
+    line-height: 20px;
+    width: 90px;
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    color: #999;
+}
+.searchbut {
+    background: none;
+    border: none;
+    height: 26px;
+    line-height: 26px;
+    width: 40px;
+    position: absolute;
+    top: 3px;
+    right: 16px;
+    color: #fff;
+}
+.ttsearch {
+    height: 30px;
+    width: 110px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    display: block;
+    text-align: center;
+    color: #000;
+}
+.bbbbar {
+    width: 980px;
+    text-shadow: #000 1px 1px 0px;
+    color: #666;
+    margin: auto;
+    height: 60px;
+    overflow: hidden;
+}
+.bbbbar_box {
+    padding: 10px 20px 0 50px;
+    float: left;
+    width: 420px;
+}
+.bbbbar span {
+    color: #ff8c04;
+}
+.bbbbar_box2 {
+    padding: 10px 20px 0 20px;
+    float: left;
+    width: 450px;
+}
+.bbbbar a:hover{
+    color: #ccc;
+}
+.searchbut:hover{
+    color: #FF0;
+    cursor: pointer;
+}
+.matchtl {
+    width: 980px;
+    height: 60px;
+    margin: 0 auto;
+    background: #ebebeb;
+    position: relative;
+}
+.matchtlbox {
+    width: 960px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.matchtlbox .title {
+    width: 31px;
+    height: 45px;
+    background: #11252c;
+    color: #ebebeb;
+    line-height: 20.33px;
+    padding-left: 7px;
+    padding-top: 5px;
+    float: left;
+    margin-right: 10px;
+}
+.matchtlbox .matchbox {
+    width: 207px;
+    height: 48px;
+    display: block;
+    border: 1px solid #fff;
+    float: left;
+    margin-right: 10px;
+    background: #fff;
+}
+.matchtlbox .matchbox img {
+    width: 87px;
+    height: 48px;
+    float: left;
+}
+.matchtlbox .matchbox p {
+    float: left;
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 1.6em;
+    color: #666;
+}
+.matchtlbox .matchbox p span {
+    display: block;
+    font-size: 12px;
+}
+.matchtlbox .matchbox:hover {
+    border: 1px solid #b20000;
+}
+.green {
+    color: #690;
+}
+.matchbox:hover{
+    color:  #b20000;
+}
+.matchtlbox .more:hover {
+    color: #b20000;
+    text-decoration: none;
+}
+.matchtlbox .more {
+    width: 29px;
+    height: 45px;
+    background: #d4d4d4;
+    color: #5c5c5c;
+    line-height: 20.33px;
+    padding-left: 7px;
+    padding-top: 5px;
+    float: right;
+}
+.main {
+    background: #EBEBEB;
+    height: 2462px;
+    width: 980px;
+    margin: auto;
+}
+.first{
+    width: 960px;
+    height: 890px;
+}
+.p10 {
+    padding: 10px;
+}
+.news {
+    width: 370px;
+    float: left;
+    margin-right: 10px;
+    background: #fff;
+}
+.news .content {
+    padding: 0 10px;
+}
+.title {
+    height: 30px;
+}
+.title a {
+    color: #43012B;
+}
+.dota_t{
+    background: url(http://dota.uuu9.com/skin201510/images/ui2015.jpg) -200px -170px no-repeat;
+    cursor: pointer;
+    height: 40px;
+    float: left;
+    width: 184px;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+.dota2_t{
+    cursor: pointer;
+    height: 40px;
+    float: left;
+    width: 184px;
+    background: url(http://dota.uuu9.com/skin201510/images/ui2015.jpg) -384px -170px no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+.hotnews {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+}
+.hotnews h2 {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 微软雅黑;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 25px;
+}
+.hotnews h2 a {
+    color: #D80000;
+}
+.hotnews h3 {
+    font-size: 12px;
+    font-weight: 100;
+    text-align: center;
+    line-height: 17px;
+}
+.hotnews h3 a {
+    color: #4B4B4B;
+}
+.hotnews a:hover{
+    color: #F00;
+    text-decoration: underline;
+}
+.tipmini {
+    background: url(http://dota.uuu9.com/skin201510/images/miniui.png) -85px -185px no-repeat;
+    color: #4CA9C9;
+    padding: 0 0 0 20px;
+    height: 20px;
+    line-height: 20px;
+}
+.tipmini a {
+    color: #4CA9C9;
+}
+.minititle {
+    background: url(http://dota.uuu9.com/skin201510/images/miniui.png) -0 -600px repeat-x;
+    overflow: hidden;
+    height: 40px;
+    overflow: hidden;
+}
+.minititle .tabminibox {
+    width: 400px;
+}
+.minititle .tabmini {
+    float: left;
+    overflow: hidden;
+    color: #43022B;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    padding-top: 10px;
+    margin-left: -10px;
+    background: url(http://dota.uuu9.com/skin201510/images/miniui.png) right -725px no-repeat;
+}
+.minititle .tabmini:hover{
+    cursor: pointer;
+    background: url(http://dota.uuu9.com/skin201510/images/miniui.png) -0 -640px no-repeat;
+    font-weight: bold;
+}
+.newslist_box {
+    position: relative;
+    height: 550px;
+    overflow: hidden;
+}
+.news .newslist {
+    height: 1000px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 350px;
+}
+.newslist li.m-5 {
+    font-weight: bold;
+    margin-top: 6px;
+}
+.news .newslist li {
+    font-size: 14px;
+}
+.newslist li {
+    line-height: 26px;
+    height: 26px;
+    overflow: hidden;
+}
+.newslist li span a {
+    float: left;
+    width: 32px;
+    height: 18px;
+    display: block;
+    margin-top: 5px;
+    margin-right: 6px;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+.newslist li .ss {
+    background: url(http://dota.uuu9.com/skin201510/images/ico.png) 0 -126px no-repeat;
+}
+.newslist li em {
+    float: right;
+    font-size: 10px;
+    padding-right: 2px;
+    color: #999;
+    font-weight: normal;
+}
+.newslist li .zt {
+    background: url(http://dota.uuu9.com/skin201510/images/ico.png) 0 -72px no-repeat;
+}
+.newslist li .zx {
+    background: url(http://dota.uuu9.com/skin201510/images/ico.png) 0 0 no-repeat;
+}
+.newslist li .sp {
+    background: url(http://dota.uuu9.com/skin201510/images/ico.png) 0 -90px no-repeat;
+}
+.newslist a:hover {
+    color: #B20000;
+    text-decoration: underline;
+}
+.newslist li .zhuant {
+    background: url(http://dota.uuu9.com/skin201510/images/ico.png) 0 -144px no-repeat;
+}
+.fourbut {
+    padding: 10px 0;
+}
+.fourbut a {
+    width: 78px;
+    border-radius: 3px;
+    height: 28px;
+    border: solid 1px #D9D7CA;
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 28px;
+}
+.fourbut a:hover {
+    color: #B20000;
+    text-decoration: underline;
+}
+.news .more {
+    background: #E5E5E5;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+.more a:hover {
+    color: #B20000;
+    text-decoration: underline;
+}
+.f_rightbar {
+    float: left;
+    width: 580px;
+}
+.flashbox {
+    float: left;
+    width: 380px;
+    height: 280px;
+}
+.flashimg {
+    position: relative;
+    width: 380px;
+    height: 230px;
+    overflow: hidden;
+}
+.flashimg a {
+    text-decoration: none;
+    color: #969696;
+    width: 380px;
+    height: 230px;
+    display: block;
+}
+
+.flashtext a img {
+    width: 70px;
+    height: 42px;
+}
+.flashimg .cl {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.flashtext a {
+    float: left;
+    padding: 4px 3px;
+    background: #1B1F23;
+}
+.flashtext a:hover{
+    background: #FF7F00;
+}
+.matchbar {
+    float: left;
+    width: 190px;
+    background: url(http://dota.uuu9.com/skin201510/images/ui2015.jpg) 0 0 no-repeat;
+    height: 277px;
+    padding: 5px 5px 0;
+    position: relative;
+}
+.matchbar h2 {
+    width: 180px;
+    height: 26px;
+    margin: 0 auto;
+    line-height: 26px;
+    font-size: 14px;
+    color: #f90;
+}
+.matchbar h2 span {
+    color: #d80000;
+    font-weight: normal;
+    margin-left: 5px;
+}
+.jqrdlist {
+    width: 180px;
+    margin: 0 auto;
+}
+.jqrdlist li {
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.imgs2{
+    position: relative;
+    width: 580px;
+    height: 235px;
+    margin-top: 300px;
+}
+.imgs2 img{
+    width: 580px;
+    height: 235px;
+    position: absolute;
+}
+.img1,.img2,.img3,.img4,.img5,.img6{
+    display: none;
+}
+.m-10 {
+    margin-top: 10px;
+}
+.w285 {
+    width: 285px;
+    float: left;
+    margin-right: 10px;
+    background: #fff;
+    padding-bottom: 10px;
+}
+.w285 .title {
+    height: 37px;
+    background: #fff;
+    border-top: 3px solid #555;
+}
+.w285 .title h2 {
+    color: #8c0000;
+    font-size: 14px;
+    line-height: 37px;
+    font-weight: bold;
+    float: left;
+    background: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 10px;
+}
+.w285 .title h2 a {
+    color: #8c0000;
+}
+.title em {
+    float: right;
+    padding: 2px 10px 0 0;
+}
+.w285 .zxbox {
+    width: 265px;
+    height: 90px;
+    margin: 0 auto;
+    position: relative;
+}
+.w285 .zxbox .pic {
+    width: 120px;
+    height: 90px;
+    float: left;
+    top:0;
+    left:0;
+    position: absolute;
+}
+.w285 .zxbox .pic img {
+    width: 120px;
+    height: 90px;
+}
+.w285 .zxbox .text {
+    width: 135px;
+    height: 90px;
+    float: right;
+    overflow: hidden;
+}
+.w285 .zxbox .text p {
+    line-height: 22px;
+    margin-top: 10px;
+    color: #777;
+}
+.w285 .w285list {
+    width: 265px;
+    margin: 10px auto 0;
+}
+.w285 .w285list li {
+    list-style: inside;
+    padding-top: 20px;
+}
+.w285 .zxbox .text h2 a {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Microsoft Yahei";
+    color: #333;
+    line-height: 18px;
+}
+.w285 .zxbox .pic a i {
+    background: url(http://dota.uuu9.com/skin201510/images/play.png);
+    width: 120px;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+.w285 .zxbox .pic a i:hover{
+    opacity: 1;
+}
+.huodong {
+    width: 600px;
+    height: 90px;
+}
+.huodong .hdbox {
+    width: 188px;
+    height: 88px;
+    border: 1px solid #cecece;
+    background: #fff;
+    float: left;
+    margin-right: 10px;
+}
+.huodong .hdbox .pic {
+    width: 80px;
+    height: 70px;
+    float: left;
+    margin-top: 9px;
+    margin-left: 8px;
+}
+.huodong .hdbox .pic img {
+    width: 80px;
+    height: 70px;
+}
+.huodong .hdbox .text {
+    width: 84px;
+    height: 70px;
+    float: right;
+    margin-top: 9px;
+    margin-right: 8px;
+}
+.huodong .hdbox .text h2 {
+    font-size: 14px;
+}
+.huodong .hdbox .text p {
+    line-height: 1.8em;
+    margin-top: 5px;
+    height: 25px;
+    overflow: hidden;
+}
+.huodong .hdbox .text span a {
+    color: #0059b2;
+}
+.huodong .hdbox {
+    width: 188px;
+    height: 88px;
+    border: 1px solid #cecece;
+    background: #fff;
+    float: left;
+    margin-right: 10px;
+}
+.gg{
+    margin-top: 20px;
+    width: 960px;
+    height: 60px;
+}
+.nrtj {
+    background: #fff;
+    width: 960px;
+    height: 400px;
+}
+.nrtj .title {
+    height: 37px;
+    background: #fff;
+    border-top: 3px solid #555;
+}
+.nrtj .title h2 {
+    color: #8c0000;
+    font-size: 14px;
+    line-height: 37px;
+    font-weight: bold;
+    float: left;
+    background: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 10px;
+}
+.nrtj .nrtjbox .nrtjimg img {
+    width: 220px;
+    height: 165px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.nrtj .nrtjbox .nrtjimg i {
+    width: 70px;
+    height: 25px;
+    display: block;
+    text-align: center;
+    line-height: 25px;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: -5px;
+    background: #f90;
+    font-style: normal;
+}
+.nrtj .nrtjbox .nrtjimg b {
+    width: 220px;
+    height: 30px;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.70;
+}
+.nrtj .nrtjbox .nrtjimg p {
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+.nrtj .nrtjbox .nrtjimg:hover p {
+    color: #f90;
+}
+.nrtj>.cl{
+    clear: both;
+}
+.nrtj .nrtjbox {
+    width: 220px;
+    height: 350px;
+    float: left;
+    margin: 10px 10px 0 10px;
+}
+.nrtj .nrtjbox .nrtjimg {
+    width: 220px;
+    height: 165px;
+    display: block;
+    position: relative;
+}
+.nrtj .nrtjbox ul {
+    margin: 10px auto 10px;
+}
+.nrtj .nrtjbox li {
+    width: 220px;
+    height: 25px;
+    line-height: 25px;
+    list-style: inside;
+    font-size: 12px;
+    overflow: hidden;
+}
+.nrtj .nrtjbox .nrtjmore {
+    width: 220px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 12px;
+    display: block;
+    background: #dfdfdf;
+    color: #555;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.nrtj .nrtjbox .nrtjmore:hover {
+    color: #8c0000;
+}
+.vbg {
+    background: #131619;
+    border-top: 5px solid #000;
+}
+.vbg .title {
+    height: 50px;
+    line-height: 50px;
+}
+.vbg .title h2 {
+    font-family: "Microsoft Yahei";
+    font-size: 16px;
+    font-weight: normal;
+    padding-left: 10px;
+    background: none;
+}
+.vbg .title h2 a {
+    color: #ff7f00;
+    float: left;
+}
+.vbg .title span {
+    color: #666;
+    font-size: 12px;
+    line-height: 38px;
+    margin-left: 15px;
+}
+.title em {
+    float: right;
+    padding: 2px 10px 0 0;
+}
+.vbg .title em a {
+    float: right;
+    color: #ff7f00;
+    font-size: 14px;
+    line-height: 30px;
+}
+.content {
+    clear: both;
+}
+.sylive {
+    width: 960px;
+    margin: 0 auto;
+    height: 615px;
+    overflow: hidden;
+    position: relative;
+}
+.sylive a {
+    text-decoration: none;
+    color: #333;
+    outline: 0 none;
+    width: 220px;
+    height: 190px;
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+    margin-bottom: 20px;
+    position: relative;
+    border-bottom-color: #ccc;
+    border-bottom: 1px solid #333;
+}
+.sylive img {
+    display: block;
+    width: 220px;
+    height: 118px;
+}
+.sylive .pic-list p {
+    width: 210px;
+    height: 38px;
+    margin: 0 auto;
+    line-height: 38px;
+    overflow: hidden;
+    border-bottom: 1px solid #333;
+    color: #ccc;
+}
+.sylive .pic-list a .shadow {
+    width: 220px;
+    height: 118px;
+    background: #000;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.sylive .pic-list a i {
+    background: url(http://dota.uuu9.com/skin201510/images/play_bj.png) 0 0 no-repeat;
+    width: 51px;
+    height: 51px;
+    position: absolute;
+    top: 34px;
+    left: 85px;
+    z-index: 9;
+    opacity: 0;
+}
+.sylive .pic-list a:hover i{
+    opacity: 1;
+}
+.m-5 {
+    margin-top: 5px;
+}
+.sylive .pic-list .hits {
+    background: url(http://dota.uuu9.com/skin201510/images/zhibobg1.png) no-repeat;
+    background-position: -284px 4px;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 22px;
+    color: #a6a6a6;
+    margin-right: 10px;
+}
+.sylive .pic-list .vzbname {
+    background: url(http://dota.uuu9.com/skin201510/images/zhibobg1.png) no-repeat;
+    background-position: -284px -30px;
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 22px;
+    color: #a6a6a6;
+    margin-left: 10px;
+    overflow: hidden;
+}
+.r{
+    float: right;
+}
+.l{
+    float: left;
+}
+.tuleft {
+    width: 680px;
+    float: left;
+    background: #fff;
+}
+.tuleft .title {
+    height: 37px;
+    background: #fff;
+    border-top: 3px solid #555;
+}
+.tuleft .title h2 {
+    color: #8c0000;
+    font-size: 14px;
+    line-height: 37px;
+    font-weight: bold;
+    float: left;
+    background: none;
+    padding-left: 20px;
+    margin-top:10px;
+}
+.tuleft .title h2 a {
+    color: #8c0000;
+}
+.title em {
+    float: right;
+    padding: 2px 10px 0 0;
+}
+.tuleft .title em a {
+    color: #545454;
+}
+.tuleft .content {
+    width: 650px;
+    height: 280px;
+    margin: 0 auto;
+}
+.tuleft .content .vbox {
+    width: 120px;
+    height: 125px;
+    float: left;
+    margin: 5px 5px 10px;
+    position: relative;
+    overflow: hidden;
+}
+.wsright {
+    width: 270px;
+    float: right;
+    background: #fff;
+}
+.wsright .title {
+    width: 260px;
+    height: 37px;
+    background: #fff;
+    border-top: 3px solid #555;
+    font-size: 14px;
+    line-height: 37px;
+    font-weight: bold;
+    color: #8c0000;
+    padding-left: 10px;
+}
+.wsright .title em a {
+    font-size: 12px;
+    color: #666;
+}
+.wsright .content p {
+    color: #999;
+}
+.wsright .content p a{
+    color: #4B4B4B;
+}
+.wsright .title a {
+    color: #8c0000;
+}
+.wsright .content .wslist {
+    margin-top: 10px;
+}
+.wsright .content .wslist li {
+    list-style: inside;
+    margin-top: 16px;
+}
+.wsright .content .wslist li a{
+    color: #4B4B4B;
+}
+.wsright .content h2 a {
+    font-size: 14px;
+    line-height: 2em;
+    color: #000;
+}
+.footer {
+    text-align: center;
+    height: 420px;
+    background:black;
+}
+.u9wotl {
+    width: 960px;
+    height: 80px;
+    margin: 10px auto;
+    background: #dedede;
+}
+.u9wotl .img {
+    float: left;
+}
+.u9wotl .text {
+    float: left;
+    text-align: left;
+    width: 480px;
+    height: 80px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+.u9wotl .text h2 a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.8em;
+}
+.u9wotl .text p {
+    font-size: 12px;
+    line-height: 1.5em;
+    color: #666;
+}
+.footer p a {
+    text-decoration: none;
+    color: #3f3f3f;
+    padding: 0px 3px;
+}
+.u9wotl .qqlist {
+    float: right;
+    text-align: left;
+    line-height: 1.8em;
+}
+.footer_text {
+    height: 210px;
+    width: 980px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.footer_text dl {
+    width: 140px;
+    float: left;
+}
+.footer_text dl dd{
+    padding-top: 15px;
+}
+.footer a {
+    color: #7F7F7F;
+}
+.closebutton {
+    width: 45px;
+    height: 102px;
+    background: url(http://dota2.uuu9.com/img/closepng.png) 0 0 no-repeat;
+    position: fixed;
+    top: 400px;
+    right: 0;
+    cursor: pointer;
+    z-index: 1999;
+}
+.closebutton:hover{
+    transform: translateX(5px);
+}
+.hotnew2{
+    display: none;
+}

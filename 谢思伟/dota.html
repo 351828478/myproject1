@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport">
+    <title>DOTA</title>
+    <link rel="icon" href="imgs/7.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+</head>
+<body>
+<div class="all">
+    <div class="header">
+        <div class="dotatopbar">
+            <div class="dotanav cl">
+                <div class="nav_div" id="nav_index">
+                    <a href="http://dota2.uuu9.com/" target="_blank" id="godonghua">首页</a>
+                 </div>
+                <div class="nav_div" id="nav_news">
+                    <a href="http://dota2.uuu9.com/List/List_7598.shtml" target="_blank">新闻</a>
+                </div>
+                <div class="nav_div" id="nav_live">
+                    <a href="http://es.dota2.uuu9.com/" target="_blank">赛事·直播</a>
+                 </div>
+                <div class="nav_div" id="nav_video">
+                    <a href="http://dota.uuu9.com/v/" target="_blank">视频</a>
+                </div>
+                <div class="nav_div_r" id="nav_bbs">
+                    <a href="http://moba.uuu9.com/forum.php" target="_blank">MOBA社区</a>
+                </div>
+                <div class="nav_div_r" id="nav_down">
+                    <a href="http://dota.uuu9.com/xz/" target="_blank">下载</a>
+                </div>
+                <div class="nav_div_r" id="nav_app">
+                    <a href="http://www.uuu9.com/gamelive/" target="_blank">应用</a>
+                </div>
+                <div class="nav_div_r" id="nav_data">
+                    <a href="http://db.dota.uuu9.com/" target="_blank">资料</a>
+                </div>
+                <script>
+                    $("#nav_index").mouseenter(function () {
+                        $("#nav_index").css("background-position","0px 0px");
+                    })
+                    $("#nav_index").mouseleave(function () {
+                        $("#nav_index").css("background-position","-9999px,-9999px");
+                    })
+                    $("#nav_news").mouseenter(function () {
+                        $("#nav_news").css("background-position","-90.5px 0px");
+                    })
+                    $("#nav_news").mouseleave(function () {
+                        $("#nav_news").css("background-position", "-9999px,-9999px");
+                    })
+                    $("#nav_live").mouseenter(function () {
+                        $("#nav_live").css("background-position","-180px 0px");
+                    })
+                    $("#nav_live").mouseleave(function () {
+                        $("#nav_live").css("background-position", "-9999px,-9999px");
+                    })
+                    $("#nav_video").mouseenter(function () {
+                        $("#nav_video").css("background-position","-270px 0px");
+                    })
+                    $("#nav_video").mouseleave(function () {
+                        $("#nav_video").css("background-position", "-9999px,-9999px");
+                    })
+                    $("#nav_data").mouseenter(function () {
+                        $("#nav_data").css("background-position","-364px 0px");
+                    })
+                    $("#nav_data").mouseleave(function () {
+                        $("#nav_data").css("background-position", "-9999px,-9999px");
+                    })
+                    $("#nav_app").mouseenter(function () {
+                        $("#nav_app").css("background-position","-454px 0px");
+                    })
+                    $("#nav_app").mouseleave(function () {
+                        $("#nav_app").css("background-position", "-9999px,-9999px");
+                    })
+                    $("#nav_down").mouseenter(function () {
+                        $("#nav_down").css("background-position","-544px 0px");
+                    })
+                    $("#nav_down").mouseleave(function () {
+                        $("#nav_down").css("background-position", "-9999px,-9999px");
+                    })
+                    $("#nav_bbs").mouseenter(function () {
+                        $("#nav_bbs").css("background-position","-634px 0px");
+                    })
+                    $("#nav_bbs").mouseleave(function () {
+                        $("#nav_bbs").css("background-position", "-9999px,-9999px");
+                    })
+                    $(window).scroll(function () {
+                        var i = $(this).scrollTop()
+                        if(i>60){
+                            $(".dotanav").css({"position":"fixed","top":0,"left":0,"right":0})
+                        }
+                    })
+                </script>
+            </div>
+        </div>
+        <div class="navlist">
+            <ul class="nav_index ul_left">
+                <li><a href="http://dota.uuu9.com/">DOTA首页</a></li>
+                <li><a href="http://dota2.uuu9.com/">DOTA2首页</a></li>
+            </ul>
+            <ul class="nav_index ul_left">
+                <li><a href="http://dota.uuu9.com/List_987.shtml/">每日屌报<i class="icon_h"></i></a></li>
+                <li><a href="http://dota2.uuu9.com/special/gif/">赛事GIF<i class="icon_n"></i></a></li>
+                <li><a href="http://dota2.uuu9.com/special/mnzf/">带你看妹</a></li>
+                <li><a href="http://dota2.uuu9.com/special/djfs/">电竞浮生<i class="icon_n"></i></a></li>
+                <li><a href="http://dota2.uuu9.com/Special/djzt/">独家专题</a></li>
+            </ul>
+            <ul class="nav_index ul_left">
+                <li><a href="http://es.dota2.uuu9.com/">最新预告<i class="icon_h"></i></a></li>
+                <li><a href="http://dota2.uuu9.com/special/shdp/">赛事资讯</a></li>
+                <li><a href="http://es.dota2.uuu9.com/Teams/">战队中心</a></li>
+                <li><a href="http://es.dota2.uuu9.com/Players">选手中心</a></li>
+            </ul>
+            <ul class="nav_index ul_left">
+                <li><a href="http://dota.uuu9.com/v/">视频站<i class="icon_h"></i></a></li>
+                <li><a href="http://dota.uuu9.com/v/2009/">2009视频<i class="icon_h"></i></a></li>
+                <li><a href="http://dota.uuu9.com/v/qingshu/">情书视频</a></li>
+                <li><a href="http://dota.uuu9.com/v/xiaoman/">小满视频</a></li>
+                <li><a href="http://dota.uuu9.com/List_933.shtml" target="_blank">小乖视频</a></li>
+            </ul>
+            <ul class="nav_index ul_right">
+            <li><a class="erwm3 donghua" href="http://www.uuu9.com/gamelive/" target="_blank" style="opacity: 0.2;">Biu 一下</a></li>
+            </ul>
+            <ul class="nav_index ul_right">
+                <li><a href="http://war3.uuu9.com/Soft/201503/35245.shtml">6.83下载<i class="icon_h"></i></a></li>
+                <li><a href="http://dota2.uuu9.com/rpg/">RPG<i class="icon_h"></i></a></li>
+                <li><a href="http://dota.uuu9.com/201303/99650.shtml">11平台<i class="icon_h"></i></a></li>
+                <li><a href="http://dota.uuu9.com/201406/109074.shtml">网易平台<i class="icon_n"></i></a></li>
+                <li><a href="http://war3.uuu9.com/Soft/201603/37998.shtml" target="_blank">魔兽1.27a</a></li>
+            </ul>
+            <ul class="nav_index ul_right">
+                <li><a href="http://www.uuu9.com/gamelive/">游久电竞APP</a></li>
+                <li><a href="http://es.dota2.uuu9.com/">赛事中心<i class="icon_h"></i></a></li>
+                <li><a href="http://tv.uuu9.com/List.html?gameid=2">游久直播</a></li>
+                <li><a href="http://dota2.uuu9.com/tu/">图片站</a></li>
+            </ul>
+            <ul class="nav_index ul_right">
+                <li><a href="http://db.dota.uuu9.com/simulator/index">模拟器<i class="icon_h"></i></a></li>
+                <li><a href="http://db.dota.uuu9.com/goods/list/">物品资料</a></li>
+                <li><a href="http://db.dota.uuu9.com/">英雄资料</a></li>
+            </ul>
+            <form action="https://www.baidu.com/s" target="_blank" class="sousuo">
+                <input type="text" class="searchtext" placeholder="你想要搜什么" name="wd">
+                <input type="submit" class="searchbut" value="搜索">
+            </form>
+            <a href="http://dota2.uuu9.com/search/" class="ttsearch" target="_blank">天梯数据查询</a>
+            <a href="http://www.uuu9.com/gamelive/" target="_blank" class="logo2" title="游久电竞APP">游久电竞APP</a>
+        </div>
+        <script>
+            $(".nav_index").mouseenter(function () {
+                $(this).css("opacity","1")
+            });
+            $(".nav_index").mouseleave(function () {
+                $(this).css("opacity","0.5")
+            });
+            $(".header").mouseenter(function () {
+                $(".erwm3").css("opacity","1")
+            });
+            $(".header").mouseleave(function () {
+                $(".erwm3").css("opacity","0.2")
+            });
+            $(".nav_index a").not(".erwm3").mouseenter(function () {
+                $(this).css("color","#F90")
+            });
+            $(".nav_index a").not(".erwm3").mouseleave(function () {
+                $(this).css("color","#ccc")
+            });
+        </script>
+        <div class="nav_div_center" id="logobox">
+            <div class="dota1logo" style="display: none;">
+                <h1 class="logo">
+                    <a href="http://dota.uuu9.com/" target="_blank">
+                        <img src="http://dota2.uuu9.com/skin201510/images/dota.png">
+                    </a>
+                </h1>
+            </div>
+            <div class="dota2logo" style="display: block;">
+                <h1 class="logo">
+                    <a href="http://dota2.uuu9.com/">
+                        <img src="http://dota2.uuu9.com/skin201510/images/dota2.png">
+                    </a>
+                </h1>
+            </div>
+            <a href="http://dota2.uuu9.com/url/dota2最新资讯.url" style="width:150px; height:20px; display:block; text-align:center; font-size:12px; color:#f90; position:absolute; top:200px; left:50px;">
+                <img src="http://dota2.uuu9.com/images/download.png">
+                <p style="display:inline;">点击将页面收藏到桌面
+                </p>
+            </a>
+        </div>
+        <script>
+            var i = true;
+            setInterval(function () {
+                if(i) {
+                    $(".dota1logo").fadeIn(2000);
+                    $(".dota2logo").fadeOut(2000);
+                    i = false;
+                }
+                else{
+                    $(".dota1logo").fadeOut(2000);
+                    $(".dota2logo").fadeIn(2000);
+                    i = true;
+                }
+            },8000);
+        </script>
+        <div class="bbbbar cl">
+            <div class="bbbbar_box">
+                <span>官方动态：</span><a href="http://dota2.uuu9.com/201611/532862.shtml" target="_blank">秋季赛珍藏3推出</a> | <a href="http://dota2.uuu9.com/201611/532206.shtml" target="_blank">秋季赛选手卡包</a> | <a href="http://dota2.uuu9.com/201611/532411.shtml" target="_blank">秋季赛中文转播方</a><br><br><span>游戏资料：</span><a href="http://db.dota2.uuu9.com/" target="_blank">DOTA2英雄资料</a> | <a href="http://db.dota2.uuu9.com/goods/list/" target="_blank">DOTA2物品资料</a> | <a href="http://db.dota2.uuu9.com/simulator/index" target="_blank">DOTA2模拟器</a> | <a href="http://dota2.uuu9.com/search/" target="_blank">天梯查询</a>
+            </div>
+            <div class="bbbbar_box2">
+                <span>工具：</span><a href="http://dota2.uuu9.com/201304/442140.shtml" target="_blank">国服下载</a> | <a href="http://www.uuu9.com/gamelive/" target="_blank">游久电竞APP | </a><a href="http://dota2.uuu9.com/zs/" target="_blank">DOTA2超级助手</a> | <a target="_blank" style="color: #378635" href="//shang.qq.com/wpa/qunwpa?idkey=76fad65acb735ed0d1be508f88fb8b6a04fbe62e22780315f043b0d2fd82d2dd">屌报交流群：341240827</a><br><br><span>专题：</span><a href="http://dota2.uuu9.com/zt/zd/" target="_blank">中单选手盘点国内篇</a> | <a href="http://dota2.uuu9.com/zt/didi/" target="_blank">喜欢Pis的女主播</a> | <a href="http://dota2.uuu9.com/zt/slz/" target="_blank">水离子与DOTA的十年之缘</a>
+            </div>
+        </div>
+    </div>
+    <div class="matchtl">
+        <div class="matchtlbox">
+            <div class="title">近期赛事</div>
+            <a href="http://dota2.uuu9.com/autumn/" target="_blank" class="matchbox">
+                <img src="http://es.dota2.uuu9.com//Public/Uploads/4/7/a/581048e2213ac.jpg">
+                <p>波士顿特锦赛<span class="green">正在进行</span></p>
+            </a>
+            <a href="http://es.dota2.uuu9.com/Game/152.html" target="_blank" class="matchbox">
+                <img src="http://es.dota2.uuu9.com/Public/Uploads/0/5/d/573945b984952.jpg">
+                <p>DPL职业联赛<span class="grey">赛事回顾</span></p>
+            </a>
+            <a href="http://es.dota2.uuu9.com/Game/163.html" target="_blank" class="matchbox">
+                <img src="http://es.dota2.uuu9.com/Public/Uploads/4/4/8/57fb02c966894.jpg">
+                <p>TS6巅峰联赛<span class="grey">赛事回顾</span></p>
+            </a>
+            <a href="http://es.dota2.uuu9.com/Game/169.html" target="_blank" class="matchbox">
+                <img src="http://es.dota2.uuu9.com/Public/Uploads/d/b/a/582a80c97e0e9.jpg">
+                <p>ESL云顶中国区<span class="grey">赛事回顾</span></p>
+            </a>
+            <a href="http://es.dota2.uuu9.com/" target="_blank" class="more">更多赛事</a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="cl p10 first">
+            <div class="news">
+                <div class="title">
+                    <a class="dota_t">DOTA</a>
+                    <a class="dota2_t">DOTA2</a>
+                </div>
+                <div class="content">
+                    <div class="hotnews hotnew1">
+                        <h2><a href="http://dota2.uuu9.com/201612/534163.shtml" target="_blank">波士顿特锦赛神吐槽：圣May皇强无敌</a></h2>
+                        <h3> <a href="http://dota2.uuu9.com/201612/533982.shtml" target="_blank">[观战指南]</a> <a href="http://es.tv.uuu9.com/Video.html?rid=517" target="_blank">[直播间]</a> <a href="http://dota2.uuu9.com/201612/533961.shtml" target="_blank">[小组赛分组]</a></h3>
+                        <h2><a href="http://dota2.uuu9.com/zt/uuu9/" target="_blank">浮光第23期:版主哥UUU9-小人物的奋斗史</a></h2>
+                        <h3><a href="http://dota2.uuu9.com/zt/qz/" target="_blank">[绊脚石签证]</a> <a href="http://dota2.uuu9.com/zt/yingying/" target="_blank">[浮梦嘤嘤]</a><a href="http://dota2.uuu9.com/zt/zzhou/" target="_blank">[选手躺枪姿势]</a></h3>
+                        <h2><a href="http://www.uuu9.com/gamelive/" target="_blank">游久电竞APP 与DOTAer一起聊比赛</a></h2>
+                        <h3> <a href="http://tv.uuu9.com/?game=dota2" target="_blank">[直播聚合]</a> <a href="http://tv.uuu9.com/Index.html?&amp;game=dota2&amp;type1=2" target="_blank">[妹子直播]</a> <a href="http://tv.uuu9.com/Index.html?&amp;game=dota2&amp;type1=1" target="_blank">[大神直播]</a></h3>
+                    </div>
+                    <div class="hotnews hotnew2">
+
+                        <h2><a href="http://dota2.uuu9.com/autumn/" target="_blank">秋季赛:8强出炉 LFY战胜LGD夺唯一名额</a></h2>
+                        <h3> <a href="http://dota2.uuu9.com/201612/533982.shtml" target="_blank">[观战指南]</a> <a href="http://es.tv.uuu9.com/Video.html?rid=517" target="_blank">[直播间]</a> <a href="http://dota2.uuu9.com/201612/533961.shtml" target="_blank">[小组赛分组]</a></h3>
+
+                        <h2><a href="http://dota2.uuu9.com/201612/534477.shtml" target="_blank">秋季赛神吐槽：窝们的八强是保送的</a></h2>
+                        <h3><a href="http://dota2.uuu9.com/zt/qz/ target=" _blank"="">[绊脚石签证]</a> <a href="http://dota2.uuu9.com/zt/yingying/" target="_blank">[浮梦嘤嘤]</a><a href="http://dota2.uuu9.com/zt/zzhou/" target="_blank">[选手躺枪姿势]</a></h3>
+
+                        <h2><a href="http://www.uuu9.com/gamelive/" target="_blank">游久电竞APP 与DOTAer一起聊比赛</a></h2>
+                        <h3> <a href="http://tv.uuu9.com/?game=dota2" target="_blank">[直播聚合]</a> <a href="http://tv.uuu9.com/Index.html?&amp;game=dota2&amp;type1=2" target="_blank">[妹子直播]</a> <a href="http://tv.uuu9.com/Index.html?&amp;game=dota2&amp;type1=1" target="_blank">[大神直播]</a></h3>
+
+                    </div>
+                    <div class="tipmini">
+                        <a href="http://www.uuu9.com/gamelive/" class="tipstext" target="_blank">看比赛赢饰品外设!</a>
+                    </div>
+                    <div class="minititle cl">
+                        <div class="tabminibox">
+                            <div class="tabmini tab1">今日要闻</div>
+                            <div class="tabmini tab2">昨日回顾</div>
+                            <div class="tabmini tab3">久榜题名</div>
+                            <div class="tabmini tab4">最新视频</div>
+                        </div>
+                    </div>
+                    <div class="newslist_box box1" style="display: block;">
+                        <ul class="newslist">
+
+
+                            <li class="m-5"><em>12-06</em><span><a href="http://dota2.uuu9.com/List/List_7609.shtml" target="_blank" class="ss">新闻资讯</a></span><a href="http://dota2.uuu9.com/autumn/" title="秋季赛淘汰赛对阵 7日23点IG.V迎战VP" target="_blank">秋季赛淘汰赛对阵 7日23点IG.V迎战VP</a></li>
+
+                            <li><em>12-06</em><span><a href="http://dota2.uuu9.com/List/List_7615.shtml" target="_blank" class="zt">每日杂谈</a></span><a href="http://dota2.uuu9.com/201612/534263.shtml" title="每日屌报(12月6日):您的审核没通过" target="_blank">每日屌报(12月6日):您的审核没通过</a></li>
+
+                            <li><em>12-06</em><span><a href="http://dota2.uuu9.com/List/List_7609.shtml" target="_blank" class="zx">新闻资讯</a></span><a href="http://dota2.uuu9.com/201612/534277.shtml" title="关于我站视频无法观看问题的修复说明" target="_blank">关于我站视频无法观看问题的修复说明</a></li>
+
+                            <li><em>12-06</em><span><a href="http://dota2.uuu9.com/List/List_7609.shtml" target="_blank" class="zx">新闻资讯</a></span><a href="http://dota2.uuu9.com/201612/534269.shtml" title="​2016完美圣典风云人物：女解说AMS" target="_blank">​2016完美圣典风云人物：女解说AMS</a></li>
+
+                            <li><em>12-06</em><span><a href="http://dota2.uuu9.com/List/List_7609.shtml" target="_blank" class="zx">新闻资讯</a></span><a href="http://dota2.uuu9.com/201612/534267.shtml" title="波士顿特锦赛:从EG对阵COL决胜局引发思考" target="_blank">波士顿特锦赛:从EG对阵COL决胜局引发思考</a></li>
+
+                            <li class="m-5"><em>12-06</em><span><a href="http://dota2.uuu9.com/List/List_7609.shtml" target="_blank" class="zx">新闻资讯</a></span><a href="http://dota2.uuu9.com/201612/534261.shtml" title="VGL团队献礼DOTA2 华丽乐章奏鸣完美圣典" target="_blank">VGL团队献礼DOTA2 华丽乐章奏鸣完美圣典</a></li>
+
+                            <li><em>12-06</em><span><a href="http://dota2.uuu9.com/List/List_7639.shtml" target="_blank" class="sp">精彩集锦</a></span><a href="http://dota2.uuu9.com/201612/534248.shtml" title="RTZ精彩集锦:别当我只会挂机喷人的逗逼" target="_blank">RTZ精彩集锦:别当我只会挂机喷人的逗逼</a></li>
+
+                            <li><em>12-06</em><span><a href="http://dota2.uuu9.com/List/List_7639.shtml" target="_blank" class="sp">精彩集锦</a></span><a href="http://dota2.uuu9.com/201612/534245.shtml" title="WoDotA出品:每周DOTA2 TOP10 第67弹" target="_blank">WoDotA出品:每周DOTA2 TOP10 第67弹</a></li>
+
+                            <li><em>12-06</em><span><a href="http://dota2.uuu9.com/List/List_7639.shtml" target="_blank" class="sp">精彩集锦</a></span><a href="http://dota2.uuu9.com/201612/534243.shtml" title="DOTA2尖枫时刻第20期:从天而降的正义" target="_blank">DOTA2尖枫时刻第20期:从天而降的正义</a></li>
+
+                            <li><em>12-06</em><span><a href="http://dota2.uuu9.com/List/List_7609.shtml" target="_blank" class="zx">新闻资讯</a></span><a href="http://dota2.uuu9.com/201612/534240.shtml" title="12月6日更新：添加赛况预测 修改光法特效" target="_blank">12月6日更新：添加赛况预测 修改光法特效</a></li>
+
+                            <li class="m-5"><em>12-06</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534238.shtml" title="秋季赛B组败者组:Newbee vs NP 回顾" target="_blank">秋季赛B组败者组:Newbee vs NP 回顾</a></li>
+
+                            <li><em>12-06</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534236.shtml" title="秋季赛D组败者组:EH vs AF 比赛回顾" target="_blank">秋季赛D组败者组:EH vs AF 比赛回顾</a></li>
+
+                            <li><em>12-06</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534235.shtml" title="秋季赛C组败者组:EG vs Faceless回顾" target="_blank">秋季赛C组败者组:EG vs Faceless回顾</a></li>
+
+                            <li><em>12-06</em><span><a href="http://dota2.uuu9.com/List/List_7609.shtml" target="_blank" class="zx">新闻资讯</a></span><a href="http://dota2.uuu9.com/201612/534265.shtml" title="波士顿特锦赛：R神直播间公然搞事" target="_blank">波士顿特锦赛：R神直播间公然搞事</a></li>
+
+                            <li><em>12-06</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534228.shtml" title="秋季赛D组胜者组:OG vs AF 比赛回顾" target="_blank">秋季赛D组胜者组:OG vs AF 比赛回顾</a></li>
+
+                            <li class="m-5"><em>12-06</em><span><a href="http://dota2.uuu9.com/List/List_7730.shtml" target="_blank" class="zx">[新闻]</a></span><a href="http://dota2.uuu9.com/201612/534234.shtml" title="GL漫画波士顿特锦赛小组赛：1330新暗号" target="_blank">GL漫画波士顿特锦赛小组赛：1330新暗号</a></li>
+
+                            <li><em>12-06</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534226.shtml" title="秋季赛C组胜者组:LGD vs Faceless回顾" target="_blank">秋季赛C组胜者组:LGD vs Faceless回顾</a></li>
+
+                            <li><em>12-06</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534223.shtml" title="秋季赛B组胜者组:Newbee vs VP 回顾" target="_blank">秋季赛B组胜者组:Newbee vs VP 回顾</a></li>
+
+                            <li><em>12-06</em><span><a href="http://dota2.uuu9.com/List/List_7730.shtml" target="_blank" class="zx">[新闻]</a></span><a href="http://dota2.uuu9.com/201612/534222.shtml" title="波士顿特锦赛第二日:LGD小组第一" target="_blank">波士顿特锦赛第二日:LGD小组第一</a></li>
+
+                            <li><em>12-05</em><span><a href="http://dota2.uuu9.com/List/List_7615.shtml" target="_blank" class="zx">每日杂谈</a></span><a href="http://dota2.uuu9.com/201612/534164.shtml" title="每日屌报(12月05日)：僵硬的两兄弟" target="_blank">每日屌报(12月05日)：僵硬的两兄弟</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="newslist_box box2" style="display: none;">
+                        <ul class="newslist">
+
+
+                            <li class="m-5"><em>12-05</em><span><a href="http://dota2.uuu9.com/List/List_7609.shtml" target="_blank" class="zx">新闻资讯</a></span><a href="http://dota2.uuu9.com/201612/534188.shtml" title="2016完美圣典风云人物：LGD.Maybe" target="_blank">2016完美圣典风云人物：LGD.Maybe</a></li>
+
+                            <li><em>12-05</em><span><a href="http://dota2.uuu9.com/List/List_7730.shtml" target="_blank" class="zt">[新闻]</a></span><a href="http://dota2.uuu9.com/201612/534179.shtml" title="解说神点评:VP非常强EG要提防OG不可怕" target="_blank">解说神点评:VP非常强EG要提防OG不可怕</a></li>
+
+                            <li><em>12-05</em><span><a href="http://dota2.uuu9.com/List/List_7730.shtml" target="_blank" class="zx">[新闻]</a></span><a href="http://dota2.uuu9.com/201612/534184.shtml" title="波士顿前线Day 3：小组赛结束 淘汰赛残酷" target="_blank">波士顿前线Day 3：小组赛结束 淘汰赛残酷</a></li>
+
+                            <li><em>12-05</em><span><a href="http://dota2.uuu9.com/List/List_7609.shtml" target="_blank" class="zx">新闻资讯</a></span><a href="http://dota2.uuu9.com/201612/534183.shtml" title="创联赛S4开赛 DOTA2打响直播第一战" target="_blank">创联赛S4开赛 DOTA2打响直播第一战</a></li>
+
+                            <li><em>12-05</em><span><a href="http://dota2.uuu9.com/List/List_7730.shtml" target="_blank" class="zx">[新闻]</a></span><a href="http://dota2.uuu9.com/201612/534163.shtml" title="波士顿特锦赛神吐槽：圣May皇强无敌" target="_blank">波士顿特锦赛神吐槽：圣May皇强无敌</a></li>
+
+                            <li class="m-5"><em>12-05</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534182.shtml" title="波士顿特锦赛小组赛败者组:COL vs EG" target="_blank">波士顿特锦赛小组赛败者组:COL vs EG</a></li>
+
+                            <li><em>12-05</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534174.shtml" title="LGD.Jixing赛后专访 不惧怕任何对手" target="_blank">LGD.Jixing赛后专访 不惧怕任何对手</a></li>
+
+                            <li><em>12-05</em><span><a href="http://dota2.uuu9.com/List/List_7730.shtml" target="_blank" class="ss">[新闻]</a></span><a href="http://dota2.uuu9.com/201612/534172.shtml" title="波士顿特锦赛次日简报:燃烧哥出师不利" target="_blank">波士顿特锦赛次日简报:燃烧哥出师不利</a></li>
+
+                            <li><em>12-05</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534166.shtml" title="波士顿特锦赛小组赛:iG.V vs EHOME回顾" target="_blank">波士顿特锦赛小组赛:iG.V vs EHOME回顾</a></li>
+
+                            <li><em>12-05</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534165.shtml" title="波士顿特锦赛小组赛胜者组决赛:OG vs AF" target="_blank">波士顿特锦赛小组赛胜者组决赛:OG vs AF</a></li>
+
+                            <li class="m-5"><em>12-05</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534162.shtml" title="波士顿特锦赛小组赛LGD vs COL回顾" target="_blank">波士顿特锦赛小组赛LGD vs COL回顾</a></li>
+
+                            <li><em>12-05</em><span><a href="http://dota2.uuu9.com/List/List_7730.shtml" target="_blank" class="zx">[新闻]</a></span><a href="http://dota2.uuu9.com/201612/534152.shtml" title="波士顿特锦赛淘汰赛对阵出炉：LGD内战" target="_blank">波士顿特锦赛淘汰赛对阵出炉：LGD内战</a></li>
+
+                            <li><em>12-05</em><span><a href="http://dota2.uuu9.com/List/List_7730.shtml" target="_blank" class="zx">[新闻]</a></span><a href="http://dota2.uuu9.com/201612/534137.shtml" title="canceL谈击败EG:线下赛击败EG更具意义" target="_blank">canceL谈击败EG:线下赛击败EG更具意义</a></li>
+
+                            <li><em>12-05</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534129.shtml" title="波士顿特锦赛:小组赛EHOME vs AF 回顾" target="_blank">波士顿特锦赛:小组赛EHOME vs AF 回顾</a></li>
+
+                            <li><em>12-05</em><span><a href="http://dota2.uuu9.com/List/List_7731.shtml" target="_blank" class="ts">[图赏]</a></span><a href="http://dota2.uuu9.com/201612/534128.shtml" title="波士顿特锦赛现场图赏:LGD与EH选手百态" target="_blank">波士顿特锦赛现场图赏:LGD与EH选手百态</a></li>
+
+                            <li class="m-5"><em>12-05</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534127.shtml" title="波士顿特锦赛:小组赛MVP vs NP 回顾" target="_blank">波士顿特锦赛:小组赛MVP vs NP 回顾</a></li>
+
+                            <li><em>12-05</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534126.shtml" title="波士顿特锦赛:小组赛LFY vs DC 回顾" target="_blank">波士顿特锦赛:小组赛LFY vs DC 回顾</a></li>
+
+                            <li><em>12-04</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534125.shtml" title="波士顿特锦赛胜者组:DC vs WG 回顾" target="_blank">波士顿特锦赛胜者组:DC vs WG 回顾</a></li>
+
+                            <li><em>12-04</em><span><a href="http://dota2.uuu9.com/List/List_7730.shtml" target="_blank" class="zx">[新闻]</a></span><a href="http://dota2.uuu9.com/201612/534124.shtml" title="DOTA2波士顿前线：涛哥毒奶不输单车" target="_blank">DOTA2波士顿前线：涛哥毒奶不输单车</a></li>
+
+                            <li><em>12-04</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534123.shtml" title="波士顿特锦赛败者组:Wings vs WG 回顾" target="_blank">波士顿特锦赛败者组:Wings vs WG 回顾</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="newslist_box box3" style="display: none;">
+                        <ul class="newslist nocolor">
+
+
+                            <li class="m-5"><em>11-28</em><span><a href="http://dota2.uuu9.com/List/List_7606.shtml" target="_blank" class="zhuant">[久榜题名]</a></span><a href="http://dota2.uuu9.com/zt/uuu9/" title="浮光第23期:版主哥UUU9,小人物的奋斗史" target="_blank">浮光第23期:版主哥UUU9,小人物的奋斗史</a></li>
+
+                            <li><em>11-21</em><span><a href="http://dota2.uuu9.com/List/List_7606.shtml" target="_blank" class="zhuant">[久榜题名]</a></span><a href="http://dota2.uuu9.com/zt/qz/" title="刀言刀语:签证,中国战队的最大绊脚石" target="_blank">刀言刀语:签证,中国战队的最大绊脚石</a></li>
+
+                            <li><em>11-11</em><span><a href="http://dota2.uuu9.com/List/List_7606.shtml" target="_blank" class="zhuant">[久榜题名]</a></span><a href="http://dota2.uuu9.com/zt/zd/" title="西恩中路谁称王 中单选手盘点国内篇" target="_blank">西恩中路谁称王 中单选手盘点国内篇</a></li>
+
+                            <li><em>11-11</em><span><a href="http://dota2.uuu9.com/List/List_7606.shtml" target="_blank" class="zhuant">[久榜题名]</a></span><a href="http://dota2.uuu9.com/zt/didi/" title="浮梦第19期:一直喜欢Pis的女主播迪迪" target="_blank">浮梦第19期:一直喜欢Pis的女主播迪迪</a></li>
+
+                            <li><em>10-28</em><span><a href="http://dota2.uuu9.com/List/List_7606.shtml" target="_blank" class="zhuant">[久榜题名]</a></span><a href="http://dota2.uuu9.com/zt/xtq/" title="浮梦第十八期:美术生小兔球的刀塔画展" target="_blank">浮梦第十八期:美术生小兔球的刀塔画展</a></li>
+
+                            <li class="m-5"><em>10-14</em><span><a href="http://dota2.uuu9.com/List/List_7606.shtml" target="_blank" class="zhuant">[久榜题名]</a></span><a href="http://dota2.uuu9.com/zt/slz/" title="水离子与DOTA的十年之缘 电竞浮光第20期" target="_blank">水离子与DOTA的十年之缘 电竞浮光第20期</a></li>
+
+                            <li><em>09-30</em><span><a href="http://dota2.uuu9.com/List/List_7606.shtml" target="_blank" class="zhuant">[久榜题名]</a></span><a href="http://dota2.uuu9.com/zt/zzhou/" title="职业选手容易中枪的几种姿势 浮光十九期" target="_blank">职业选手容易中枪的几种姿势 浮光十九期</a></li>
+
+                            <li><em>09-26</em><span><a href="http://dota2.uuu9.com/List/List_7606.shtml" target="_blank" class="zhuant">[久榜题名]</a></span><a href="http://dota2.uuu9.com/zt/chacha/" title="浮梦第十四期:VGirls.茶茶的电竞生活" target="_blank">浮梦第十四期:VGirls.茶茶的电竞生活</a></li>
+
+                            <li><em>09-09</em><span><a href="http://dota2.uuu9.com/List/List_7606.shtml" target="_blank" class="zhuant">[久榜题名]</a></span><a href="http://dota2.uuu9.com/zt/yuno/" title="浮梦十三期:立志成为最专业女解说的Yuno" target="_blank">浮梦十三期:立志成为最专业女解说的Yuno</a></li>
+
+                            <li><em>09-06</em><span><a href="http://dota2.uuu9.com/List/List_7606.shtml" target="_blank" class="zhuant">[久榜题名]</a></span><a href="http://dota2.uuu9.com/zt/zhuanhui/" title="DOTA2战队转会专栏 国内外战队信息一览" target="_blank">DOTA2战队转会专栏 国内外战队信息一览</a></li>
+
+                            <li class="m-5"><em>09-05</em><span><a href="http://dota2.uuu9.com/List/List_7606.shtml" target="_blank" class="zhuant">[久榜题名]</a></span><a href="http://dota2.uuu9.com/zt/mmyzt/" title="我的青春就是DOTA 七年老兵MMY暂离职业圈" target="_blank">我的青春就是DOTA 七年老兵MMY暂离职业圈</a></li>
+
+                            <li><em>08-25</em><span><a href="http://dota2.uuu9.com/List/List_7606.shtml" target="_blank" class="zhuant">[久榜题名]</a></span><a href="http://dota2.uuu9.com/zt/sayouly/" title="电竞浮梦第十二期:软件工程师翁小璃" target="_blank">电竞浮梦第十二期:软件工程师翁小璃</a></li>
+
+                            <li><em>08-14</em><span><a href="http://dota2.uuu9.com/List/List_7606.shtml" target="_blank" class="zx">[久榜题名]</a></span><a href="http://dota2.uuu9.com/201608/525851.shtml" title="TI6冠军WINGS:冠军之路是怎样炼成的" target="_blank">TI6冠军WINGS:冠军之路是怎样炼成的</a></li>
+
+                            <li><em>07-29</em><span><a href="http://dota2.uuu9.com/List/List_7606.shtml" target="_blank" class="zhuant">[久榜题名]</a></span><a href="http://dota2.uuu9.com/zt/ti6qz/" title="新老争锋 第六届国际邀请赛前瞻" target="_blank">新老争锋 第六届国际邀请赛前瞻</a></li>
+
+                            <li><em>07-29</em><span><a href="http://dota2.uuu9.com/List/List_7606.shtml" target="_blank" class="zhuant">[久榜题名]</a></span><a href="http://dota2.uuu9.com/zt/sticky/" title="浮梦第九期:爱打刀塔的ShowGirl小糯米" target="_blank">浮梦第九期:爱打刀塔的ShowGirl小糯米</a></li>
+
+                            <li class="m-5"><em>07-15</em><span><a href="http://dota2.uuu9.com/List/List_7606.shtml" target="_blank" class="zhuant">[久榜题名]</a></span><a href="http://dota2.uuu9.com/zt/rsg/" title="电竞浮光BurNIng:退役才是最好的选择？" target="_blank">电竞浮光BurNIng:退役才是最好的选择？</a></li>
+
+                            <li><em>07-15</em><span><a href="http://dota2.uuu9.com/List/List_7606.shtml" target="_blank" class="zx">[久榜题名]</a></span><a href="http://dota2.uuu9.com/zt/dove/" title="浮梦第七期：张天鸽的电竞升职记" target="_blank">浮梦第七期：张天鸽的电竞升职记</a></li>
+
+                            <li><em>07-04</em><span><a href="http://dota2.uuu9.com/List/List_7606.shtml" target="_blank" class="zx">[久榜题名]</a></span><a href="http://dota2.uuu9.com/zt/ou/" title="足球遇见DOTA：欧洲杯列强vsDOTA战队" target="_blank">足球遇见DOTA：欧洲杯列强vsDOTA战队</a></li>
+
+                            <li><em>06-30</em><span><a href="http://dota2.uuu9.com/List/List_7606.shtml" target="_blank" class="zhuant">[久榜题名]</a></span><a href="http://dota2.uuu9.com/zt/dawang/" title="浮梦第六期:喜欢Pis的36G解说大王" target="_blank">浮梦第六期:喜欢Pis的36G解说大王</a></li>
+
+                            <li><em>06-20</em><span><a href="http://dota2.uuu9.com/List/List_7606.shtml" target="_blank" class="zhuant">[久榜题名]</a></span><a href="http://dota2.uuu9.com/zt/saro/" title="浮梦第三期:会打DOTA的萝莉程序猿SaRo" target="_blank">浮梦第三期:会打DOTA的萝莉程序猿SaRo</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="newslist_box box4" style="display: none;">
+                        <ul class="newslist">
+
+
+                            <li class="m-5"><em>12-06</em><span><a href="http://dota2.uuu9.com/List/List_7639.shtml" target="_blank" class="sp">精彩集锦</a></span><a href="http://dota2.uuu9.com/201612/534248.shtml" title="RTZ精彩集锦:别当我只会挂机喷人的逗逼" target="_blank">RTZ精彩集锦:别当我只会挂机喷人的逗逼</a></li>
+
+                            <li><em>12-06</em><span><a href="http://dota2.uuu9.com/List/List_7639.shtml" target="_blank" class="sp">精彩集锦</a></span><a href="http://dota2.uuu9.com/201612/534245.shtml" title="WoDotA出品:每周DOTA2 TOP10 第67弹" target="_blank">WoDotA出品:每周DOTA2 TOP10 第67弹</a></li>
+
+                            <li><em>12-06</em><span><a href="http://dota2.uuu9.com/List/List_7639.shtml" target="_blank" class="sp">精彩集锦</a></span><a href="http://dota2.uuu9.com/201612/534243.shtml" title="DOTA2尖枫时刻第20期:从天而降的正义" target="_blank">DOTA2尖枫时刻第20期:从天而降的正义</a></li>
+
+                            <li><em>12-06</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534238.shtml" title="秋季赛B组败者组:Newbee vs NP 回顾" target="_blank">秋季赛B组败者组:Newbee vs NP 回顾</a></li>
+
+                            <li><em>12-06</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534236.shtml" title="秋季赛D组败者组:EH vs AF 比赛回顾" target="_blank">秋季赛D组败者组:EH vs AF 比赛回顾</a></li>
+
+                            <li class="m-5"><em>12-06</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534235.shtml" title="秋季赛C组败者组:EG vs Faceless回顾" target="_blank">秋季赛C组败者组:EG vs Faceless回顾</a></li>
+
+                            <li><em>12-06</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534228.shtml" title="秋季赛D组胜者组:OG vs AF 比赛回顾" target="_blank">秋季赛D组胜者组:OG vs AF 比赛回顾</a></li>
+
+                            <li><em>12-06</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534226.shtml" title="秋季赛C组胜者组:LGD vs Faceless回顾" target="_blank">秋季赛C组胜者组:LGD vs Faceless回顾</a></li>
+
+                            <li><em>12-06</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534223.shtml" title="秋季赛B组胜者组:Newbee vs VP 回顾" target="_blank">秋季赛B组胜者组:Newbee vs VP 回顾</a></li>
+
+                            <li><em>12-05</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534182.shtml" title="波士顿特锦赛小组赛败者组:COL vs EG" target="_blank">波士顿特锦赛小组赛败者组:COL vs EG</a></li>
+
+                            <li class="m-5"><em>12-05</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534174.shtml" title="LGD.Jixing赛后专访 不惧怕任何对手" target="_blank">LGD.Jixing赛后专访 不惧怕任何对手</a></li>
+
+                            <li><em>12-05</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534166.shtml" title="波士顿特锦赛小组赛:iG.V vs EHOME回顾" target="_blank">波士顿特锦赛小组赛:iG.V vs EHOME回顾</a></li>
+
+                            <li><em>12-05</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534165.shtml" title="波士顿特锦赛小组赛胜者组决赛:OG vs AF" target="_blank">波士顿特锦赛小组赛胜者组决赛:OG vs AF</a></li>
+
+                            <li><em>12-05</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534162.shtml" title="波士顿特锦赛小组赛LGD vs COL回顾" target="_blank">波士顿特锦赛小组赛LGD vs COL回顾</a></li>
+
+                            <li><em>12-05</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534129.shtml" title="波士顿特锦赛:小组赛EHOME vs AF 回顾" target="_blank">波士顿特锦赛:小组赛EHOME vs AF 回顾</a></li>
+
+                            <li class="m-5"><em>12-05</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534127.shtml" title="波士顿特锦赛:小组赛MVP vs NP 回顾" target="_blank">波士顿特锦赛:小组赛MVP vs NP 回顾</a></li>
+
+                            <li><em>12-05</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534126.shtml" title="波士顿特锦赛:小组赛LFY vs DC 回顾" target="_blank">波士顿特锦赛:小组赛LFY vs DC 回顾</a></li>
+
+                            <li><em>12-04</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534125.shtml" title="波士顿特锦赛胜者组:DC vs WG 回顾" target="_blank">波士顿特锦赛胜者组:DC vs WG 回顾</a></li>
+
+                            <li><em>12-04</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534123.shtml" title="波士顿特锦赛败者组:Wings vs WG 回顾" target="_blank">波士顿特锦赛败者组:Wings vs WG 回顾</a></li>
+
+                            <li><em>12-04</em><span><a href="http://dota2.uuu9.com/List/List_7732.shtml" target="_blank" class="sp">[视频]</a></span><a href="http://dota2.uuu9.com/201612/534122.shtml" title="波士顿特锦赛败者组:Wings vs LFY 回顾" target="_blank">波士顿特锦赛败者组:Wings vs LFY 回顾</a></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <script>
+                    $(".tab1").click(function () {
+                        $(".box1").css("display","block");
+                        $(".box2,.box3,.box4").css("display","none");
+                    });
+                    $(".tab2").click(function () {
+                        $(".box2").css("display","block");
+                        $(".box1,.box3,.box4").css("display","none");
+                    });
+                    $(".tab3").click(function () {
+                        $(".box3").css("display","block");
+                        $(".box1,.box2,.box4").css("display","none");
+                    });
+                    $(".tab4").click(function () {
+                        $(".box4").css("display","block");
+                        $(".box1,.box2,.box3").css("display","none");
+                    });
+                    $(".dota_t").click(function () {
+                        $(this).css("background-position", "-200px -170px");
+                        $(".dota2_t").css("background-position","-184px -410px");
+                        $(".hotnew1").show()
+                        $(".hotnew2").hide()
+                    });
+                    $(".dota2_t").click(function () {
+                        $(this).css("background-position", "-384px -211px");
+                        $(".dota_t").css("background-position","-200px -211px");
+                        $(".hotnew2").show();
+                        $(".hotnew1").hide();
+                    });
+                </script>
+                <div class="cl fourbut">
+                    <a target="_blank" href="http://dota2.uuu9.com/List/List_7674.shtml">看赛事信息</a> <a target="_blank" href="http://dota2.uuu9.com/List/List_7610.shtml">看技术攻略</a> <a target="_blank" href="http://dota2.uuu9.com/List/List_7612.shtml">看官方日志</a> <a target="_blank" href="http://dota2.uuu9.com/List/List_7611.shtml">看圈内八卦</a>
+                </div>
+                <div class="more"><a href="http://dota2.uuu9.com/List/List_7598.shtml" target="_blank">查看更多新闻</a></div>
+            </div>
+            <div class="f_rightbar">
+                <div class="cl">
+                    <div class="flashbox">
+                        <div class="flashimg">
+                            <div class="cl">
+                                <a href="http://dota2.uuu9.com/autumn/" title="波士顿特锦赛报名" target="_blank" class="imgs" style="position: relative; top: 0px;"><img src="http://image3.uuu9.com/war3/dota/UploadFiles_5254/201612/201612021228428281.jpg" alt="波士顿特锦赛报名"></a>
+                                <a href="http://moba.uuu9.com/thread-4650856-1-1.html" title="ROG玩家国度参与竞猜波士顿特锦赛" target="_blank" class="imgs" style="position: relative;"><img src="http://image3.uuu9.com/war3/dota/UploadFiles_5254/201612/201612021720147501.jpg" alt="ROG玩家国度参与竞猜波士顿特锦赛"></a>
+                                <a href="http://dota2.uuu9.com/201611/533853.shtml" title="传XCNT签证未过 LGD获秋季赛参赛资格" target="_blank" class="imgs" style="position: relative;"><img src="http://image3.uuu9.com/war3/dota/UploadFiles_5254/201612/201612011036480461.jpg" alt="传XCNT签证未过 LGD获秋季赛参赛资格"></a>
+                                <a href="http://dota2.uuu9.com/zt/uuu9/" title="浮光第23期:版主哥UUU9,小人物的奋斗史" target="_blank" class="imgs" style="position: relative;"><img src="http://image3.uuu9.com/war3/dota/UploadFiles_5254/201611/201611281124348041.jpg" alt="浮光第23期:版主哥UUU9,小人物的奋斗史"></a>
+                                <a href="http://dota2.uuu9.com/zt/yingying/" title="浮梦第二十期:女解说嘤嘤 柔软心的小萝莉" target="_blank" class="imgs" style="position: relative;"><img src="http://image3.uuu9.com/war3/dota/UploadFiles_5254/201611/201611281042588351.jpg" alt="浮梦第二十期:女解说嘤嘤 柔软心的小萝莉"></a>
+                            </div>
+                        </div>
+                        <div class="flashtext">
+                            <a href="http://dota2.uuu9.com/autumn/" title="波士顿特锦赛报名" target="_blank" class="imgs_a current"><img src="http://image3.uuu9.com/war3/dota/UploadFiles_5254/201612/201612021228428281.jpg" alt="波士顿特锦赛报名"></a>
+                            <a href="http://moba.uuu9.com/thread-4650856-1-1.html" title="ROG玩家国度参与竞猜波士顿特锦赛" target="_blank" class="imgs_a"><img src="http://image3.uuu9.com/war3/dota/UploadFiles_5254/201612/201612021720147501.jpg" alt="ROG玩家国度参与竞猜波士顿特锦赛"></a>
+                            <a href="http://dota2.uuu9.com/201611/533853.shtml" title="传XCNT签证未过 LGD获秋季赛参赛资格" target="_blank" class="imgs_a"><img src="http://image3.uuu9.com/war3/dota/UploadFiles_5254/201612/201612011036480461.jpg" alt="传XCNT签证未过 LGD获秋季赛参赛资格"></a>
+                            <a href="http://dota2.uuu9.com/zt/uuu9/" title="浮光第23期:版主哥UUU9,小人物的奋斗史" target="_blank" class="imgs_a"><img src="http://image3.uuu9.com/war3/dota/UploadFiles_5254/201611/201611281124348041.jpg" alt="浮光第23期:版主哥UUU9,小人物的奋斗史"></a>
+                            <a href="http://dota2.uuu9.com/zt/yingying/" title="浮梦第二十期:女解说嘤嘤 柔软心的小萝莉" target="_blank" class="imgs_a"><img src="http://image3.uuu9.com/war3/dota/UploadFiles_5254/201611/201611281042588351.jpg" alt="浮梦第二十期:女解说嘤嘤 柔软心的小萝莉"></a>
+                        </div>
+                        <script>
+                            var a = 0,x;
+                            var $imgs = $(".flashimg .cl a");
+                            $(".flashimg .cl :first").clone().appendTo(".flashimg .cl");
+                            function lunbo() {
+                                if(a<$imgs.length) {
+                                    $(".flashimg .cl").animate({"top": a * -230}, 500);
+                                    $(".flashtext a").eq(a).css("background","#FF7F00").siblings().css("background","#1B1F23");
+                                    a++;
+                                }
+                                else{
+                                    $(".flashimg .cl").animate({"top": a*-230}, 500,function () {
+                                        $(".flashimg .cl").css("top",0);
+                                        $(".flashtext a").eq(0).css("background","#FF7F00").siblings().css("background","#1B1F23");
+                                        a = 1;
+                                    })
+                                }
+                                x = setTimeout(lunbo,2000);
+                            }
+                            lunbo();
+                            $(".flashtext a").mouseenter(function () {
+                                var w = $(this).index();
+                                $(".flashimg .cl").animate({"top": w * -230}, 500);
+                                $(".flashtext a").eq(w).css("background","#FF7F00").siblings().css("background","#1B1F23");
+                                clearTimeout(x);
+                            });
+                            $(".flashtext a").mouseleave(function fn() {
+                                a = $(this).index();
+                                x = setTimeout(lunbo,2000);
+                            });
+                        </script>
+                    </div>
+                    <div class="matchbar">
+                        <h2>近期热点<span>hot</span></h2>
+                        <ul class="jqrdlist">
+                            <li><a href="http://dota2.uuu9.com/201612/534152.shtml" target="_blank" title="波士顿特锦赛淘汰赛事对阵">波士顿特锦赛淘汰赛事对阵</a></li>
+                            <li><a href="http://dota2.uuu9.com/201611/532799.shtml" target="_blank" title="Loda采访表示可能会离开Alliance">Loda采访表示可能会离开Alliance</a></li>
+                            <li><a href="http://dota2.uuu9.com/201611/533647.shtml" target="_blank" title="知乎一图流评价LaNm张志成">知乎一图流评价LaNm张志成</a></li>
+                            <li><a href="http://dota2.uuu9.com/201611/533690.shtml" target="_blank" title="Faith_bian登美服榜首">Faith_bian登美服榜首</a></li>
+                            <li><a href="http://dota2.uuu9.com/201611/533691.shtml" target="_blank" title="IG.V第三次面签两名辅助被拒">IG.V第三次面签两名辅助被拒</a></li>
+                            <li><a href="http://dota2.uuu9.com/201611/533277.shtml" target="_blank" title="LGD或将顶替IG.V参加特锦赛">LGD或将顶替IG.V参加特锦赛</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="imgs2">
+                    <img src="imgs/0.jpeg" class="img0">
+                    <img src="imgs/1.jpeg" class="img1">
+                    <img src="imgs/2.jpg" class="img2">
+                    <img src="imgs/3.jpg" class="img3">
+                    <img src="imgs/4.jpg" class="img4">
+                    <img src="imgs/5.jpg" class="img5">
+                    <img src="imgs/6.jpg" class="img6">
+                </div>
+                <script>
+                    var b = 0,c;
+                    var $img =$(".imgs2").children();
+                    function scroll() {
+                        if(b<$img.length-1){
+                            $img.eq(b).fadeIn(1000).siblings().fadeOut(1000);
+                            b++
+                        }
+                        else{
+                            $img.eq(b).fadeIn(1000).siblings().fadeOut(1000);
+                            b=0
+                        }
+                        c = setTimeout(scroll,2000);
+                    }
+                    scroll();
+                </script>
+                <div class="cl m-10">
+                    <div class="w285">
+                        <div class="title">
+                            <h2><a href="http://dota2.uuu9.com/special/shdp/" target="_blank">赛事快报</a></h2><em><a href="http://dota2.uuu9.com/special/shdp/" target="_blank">更多</a></em>
+                        </div>
+
+                        <div class="zxbox">
+                            <div class="pic"><a href="http://dota2.uuu9.com/201612/534179.shtml" target="_blank" title="解说神点评:VP非常强EG要提防OG不可怕"><img src="http://image.uuu9.com/pcgame/dota2/UploadFiles/201612/201612051745161891.jpg" alt="解说神点评:VP非常强EG要提防OG不可怕"></a></div>
+                            <div class="text">
+                                <h2><a href="http://dota2.uuu9.com/201612/534179.shtml" target="_blank" title="解说神点评:VP非常强EG要提防OG不可怕">解说神点评:VP非常强EG要提防OG不可怕</a></h2>
+                                <p>解说眼里的比赛是怎样的，解说又有什么独家内幕，小编将会在赛后邀请知名解...<a href="http://dota2.uuu9.com/201612/534179.shtml" target="_blank">[查看详情]</a></p>
+                            </div>
+                        </div>
+
+                        <ul class="w285list">
+
+                            <li><a href="http://dota2.uuu9.com/201612/534172.shtml" target="_blank" title="波士顿特锦赛次日简报:燃烧哥出师不利">波士顿特锦赛次日简报:燃烧哥出师不利</a></li>
+
+                            <li><a href="http://dota2.uuu9.com/201612/534101.shtml" target="_blank" title="众解说点评秋季赛首日:然并卵的毛永仁">众解说点评秋季赛首日:然并卵的毛永仁</a></li>
+
+                            <li><a href="http://dota2.uuu9.com/201612/534086.shtml" target="_blank" title="波士顿特锦赛首日战报:DC,VP分列AB组头名">波士顿特锦赛首日战报:DC,VP分列AB组头名</a></li>
+
+                            <li><a href="http://dota2.uuu9.com/201611/533230.shtml" target="_blank" title="TS6巅峰联赛简报:VP,进击的战斗民族！">TS6巅峰联赛简报:VP,进击的战斗民族！</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="w285" style="margin-right:0">
+                        <div class="title">
+                            <h2><a href="http://dota2.uuu9.com/special/jddj/" target="_blank">焦点对决</a></h2><em><a href="http://dota2.uuu9.com/special/jddj/" target="_blank">更多</a></em>
+                        </div>
+
+                        <div class="zxbox">
+                            <div class="pic"><a href="http://dota2.uuu9.com/201612/534324.shtml" target="_blank" title="秋季赛D组胜者组:OG vs IG.V比赛回顾"><img src="http://image.uuu9.com/pcgame/dota2/UploadFiles/201612/201612071531036891.jpg" alt="秋季赛D组胜者组:OG vs IG.V比赛回顾"><i></i></a></div>
+                            <div class="text">
+                                <h2><a href="http://dota2.uuu9.com/201612/534324.shtml" target="_blank" title="秋季赛D组胜者组:OG vs IG.V比赛回顾">秋季赛D组胜者组:OG vs IG.V比赛回顾</a></h2>
+                                <p>OG vs IG.V<a href="http://dota2.uuu9.com/201612/534324.shtml" target="_blank">[查看详情]</a></p>
+                            </div>
+                        </div>
+                        <ul class="w285list">
+                            <li><a href="http://dota2.uuu9.com/201612/534238.shtml" target="_blank" title="秋季赛B组败者组:Newbee vs NP 回顾">秋季赛B组败者组:Newbee vs NP 回顾</a></li>
+                            <li><a href="http://dota2.uuu9.com/201612/534223.shtml" target="_blank" title="秋季赛B组胜者组:Newbee vs VP 回顾">秋季赛B组胜者组:Newbee vs VP 回顾</a></li>
+                            <li><a href="http://dota2.uuu9.com/201612/534129.shtml" target="_blank" title="波士顿特锦赛:小组赛EHOME vs AF 回顾">波士顿特锦赛:小组赛EHOME vs AF 回顾</a></li>
+                            <li><a href="http://dota2.uuu9.com/201612/534127.shtml" target="_blank" title="波士顿特锦赛:小组赛MVP vs NP 回顾">波士顿特锦赛:小组赛MVP vs NP 回顾</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cl m-10 huodong">
+                    <div class="hdbox">
+                        <div class="pic"><a href="http://moba.uuu9.com/thread-4650856-1-1.html" target="_blank" title=""><img src="http://image.uuu9.com/pcgame/dota2/UploadFiles/201612/_Z201612021428564081.jpg" alt=""></a></div>
+                        <div class="text">
+                            <h2><a href="http://moba.uuu9.com/thread-4650856-1-1.html" target="_blank" title="">秋季赛竞猜</a></h2>
+                            <p>ROG玩家国度</p>
+                            <span><a href="http://moba.uuu9.com/thread-4650856-1-1.html" target="_blank" title="">回帖送刀币！</a></span>
+                        </div>
+                    </div>
+                    <div class="hdbox">
+                        <div class="pic"><a href="http://moba.uuu9.com/thread-4652480-1-1.html" target="_blank" title=""><img src="http://image.uuu9.com/pcgame/dota2/UploadFiles/201611/_Z201611301732316011.jpg"></a></div>
+                        <div class="text">
+                            <h2><a href="http://moba.uuu9.com/thread-4652480-1-1.html" target="_blank" title="">雷柏V510</a></h2>
+                            <p>秋季赛活动</p>
+                            <span><a href="http://moba.uuu9.com/thread-4652480-1-1.html" target="_blank" title="">回帖拿键盘</a></span>
+                        </div>
+                    </div>
+                    <div class="hdpic">
+                        <a href="http://moba.uuu9.com/thread-4654528-1-1.html" target="_blank" title=""><img src="http://image.uuu9.com/pcgame/dota2/UploadFiles/201612/_Z201612071644196271.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cl p10 gg">
+            <div id="UUU9CREATIVE_SHOW"><div style="margin:0 auto;z-index:-1;width:960px;height:60px">
+                <object autostart="true" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="960" height="60">
+                    <param name="movie" value="http://static.gg.uuu9.com/material/20161207/5847e4c18339d.swf">
+                    <param name="quality" value="high">
+                    <embed src="http://static.gg.uuu9.com/material/20161207/5847e4c18339d.swf" wmode="transparent" quality="high" flashvars="switchSound=off" pluginspage="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="never" type="application/x-shockwave-flash" width="960" height="60">
+                        <param name="wmode" value="opaque">
+                        <param name="FlashVars" value="switchSound=off">
+                        <param name="allowscriptaccess" value="never">
+                </object>
+            </div>
+                <div style="cursor:hand;z-index:1;visibility:visible; width:960px; height:60px; margin-top:-250px;">
+                    <a href="http://gg.uuu9.com/j.php?url=52c7hqlexTjrXN0VQDCEMNLLmpljoDbNedy5%2F12GrSuJVBJhbkjuDtVchDZV0LUb3DPtH492%2B6pqEvll2nUjZSyG5G3DsB5i5TpjGSiFj7JrvGPrGaiBIpsD6uRF2d7CWC579oEXN1%2FsNVTdNvJ3s2uMXnLeumknu6H1d9d8zIPU" target="_blank" style="position:absolute;left:0px;top:0px;width:960px; height:60px;background:#000;filter:alpha(opacity=00);-moz-opacity:0.0;opacity:0.0;" title=""></a>
+                </div>
+                <img src="imgs/7.jpg" width="1" height="1"></div>
+            </div>
+        <div class="cl p10 nrtj">
+            <div class="title">
+                <h2><a href="http://dota2.uuu9.com/tu/" target="_blank">内容推荐</a></h2>
+            </div>
+            <div class="cl">
+                <div class="nrtjbox">
+
+                    <a href="http://dota2.uuu9.com/201612/534338.shtml" target="_blank" class="nrtjimg" title="每日屌报(12月07日)：还记得年少的梦吗"><img src="http://image.uuu9.com/pcgame/dota2/UploadFiles/201612/201612071823560491.jpg" alt="每日屌报(12月07日)：还记得年少的梦吗"><i>每日屌报</i><b></b><p>每日屌报(12月07日)：还记得年少的梦吗</p></a>
+
+                    <ul>
+
+                        <li><a href="http://dota2.uuu9.com/201612/534263.shtml" target="_blank" title="每日屌报(12月6日):您的审核没通过">每日屌报(12月6日):您的审核没通过</a></li>
+
+                        <li><a href="http://dota2.uuu9.com/201612/534164.shtml" target="_blank" title="每日屌报(12月05日)：僵硬的两兄弟">每日屌报(12月05日)：僵硬的两兄弟</a></li>
+
+                        <li><a href="http://dota2.uuu9.com/201612/533970.shtml" target="_blank" title="每日屌报(12月2日)：男人的不同轨迹">每日屌报(12月2日)：男人的不同轨</a></li>
+
+                        <li><a href="http://dota2.uuu9.com/201612/533926.shtml" target="_blank" title="每日屌报(12月1日):不要以为安全了">每日屌报(12月1日):不要以为安全了</a></li>
+
+                        <li><a href="http://dota2.uuu9.com/201611/533848.shtml" target="_blank" title="每日屌报(11月30日):鞠躬尽瘁蔡国师">每日屌报(11月30日):鞠躬尽瘁蔡国</a></li>
+
+                    </ul>
+                    <a href="http://dota.uuu9.com/List_987.shtml" target="_blank" class="nrtjmore">查看更多</a>
+                </div>
+                <div class="nrtjbox">
+
+                    <a href="http://dota2.uuu9.com/zt/uuu9/" target="_blank" class="nrtjimg" title="浮光第23期:版主哥UUU9,小人物的奋斗史"><img src="http://image.uuu9.com/pcgame/dota2/UploadFiles/201611/201611251733442411.jpg" alt="浮光第23期:版主哥UUU9,小人物的奋斗史"><i>独家专题</i><b></b><p>浮光第23期:版主哥UUU9,小人物的奋斗史</p></a>
+
+                    <ul>
+
+                        <li><a href="http://dota2.uuu9.com/zt/qz/" target="_blank" title="刀言刀语:签证,中国战队的最大绊脚石">刀言刀语:签证,中国战队的最大绊脚</a></li>
+
+                        <li><a href="http://dota2.uuu9.com/zt/zd/" target="_blank" title="西恩中路谁称王 中单选手盘点国内篇">西恩中路谁称王 中单选手盘点国内</a></li>
+
+                        <li><a href="http://dota2.uuu9.com/zt/slz/" target="_blank" title="水离子与DOTA的十年之缘 电竞浮光第20期">水离子与DOTA的十年之缘 电竞浮光</a></li>
+
+                        <li><a href="http://dota2.uuu9.com/zt/zzhou/" target="_blank" title="职业选手容易中枪的几种姿势 浮光十九期">职业选手容易中枪的几种姿势 浮光</a></li>
+
+                        <li><a href="http://dota2.uuu9.com/zt/zhuanhui/" target="_blank" title="DOTA2战队转会专栏 国内外战队信息一览">DOTA2战队转会专栏 国内外战队信息</a></li>
+
+                    </ul>
+                    <a href="http://dota2.uuu9.com/Special/djzt/" target="_blank" class="nrtjmore">查看更多</a>
+                </div>
+                <div class="nrtjbox">
+
+                    <a href="http://dota2.uuu9.com/zt/yingying/" target="_blank" class="nrtjimg" title="浮梦第二十期:女解说嘤嘤 柔软心的小萝莉"><img src="http://image.uuu9.com/pcgame/dota2/UploadFiles/201611/201611251604377721.jpg" alt="浮梦第二十期:女解说嘤嘤 柔软心的小萝莉"><i>带你看妹</i><b></b><p>浮梦第二十期:女解说嘤嘤 柔软心的小萝莉</p></a>
+
+                    <ul>
+
+                        <li><a href="http://dota2.uuu9.com/zt/didi/" target="_blank" title="浮梦第19期:一直喜欢Pis的女主播迪迪">浮梦第19期:一直喜欢Pis的女主播迪</a></li>
+
+                        <li><a href="http://dota2.uuu9.com/zt/xtq/" target="_blank" title="浮梦第十八期:美术生小兔球的刀塔画展">浮梦第十八期:美术生小兔球的刀塔</a></li>
+
+                        <li><a href="http://dota2.uuu9.com/zt/chacha/" target="_blank" title="浮梦第十四期:VGirls.茶茶的电竞生活">浮梦第十四期:VGirls.茶茶的电竞生</a></li>
+
+                        <li><a href="http://dota2.uuu9.com/zt/yuno/" target="_blank" title="浮梦十三期:立志成为最专业女解说的Yuno">浮梦十三期:立志成为最专业女解说</a></li>
+
+                        <li><a href="http://dota2.uuu9.com/zt/sayouly/" target="_blank" title="电竞浮梦第十二期:软件工程师翁小璃">电竞浮梦第十二期:软件工程师翁小</a></li>
+
+                    </ul>
+                    <a href="http://dota2.uuu9.com/special/mnzf/" target="_blank" class="nrtjmore">查看更多</a>
+                </div>
+                <div class="nrtjbox">
+
+                    <a href="http://dota2.uuu9.com/201611/533527.shtml" target="_blank" class="nrtjimg" title="专访Cr1t-:没当过队长 FEAR的帮助很大"><img src="http://image.uuu9.com/pcgame/dota2/UploadFiles/201611/201611251600371941.jpg" alt="专访Cr1t-:没当过队长 FEAR的帮助很大"><i>人物专访</i><b></b><p>专访Cr1t-:没当过队长 FEAR的帮助很大</p></a>
+
+                    <ul>
+
+                        <li><a href="http://dota2.uuu9.com/201611/532670.shtml" target="_blank" title="Limmp采访:相信在Alliance可以做的更好">Limmp采访:相信在Alliance可以做的</a></li>
+
+                        <li><a href="http://dota2.uuu9.com/201610/531140.shtml" target="_blank" title="B神:老DK是世外桃源 今年是最后一年">B神:老DK是世外桃源 今年是最后一</a></li>
+
+                        <li><a href="http://dota2.uuu9.com/201610/530775.shtml" target="_blank" title="南洋杯负责人:不可控因素多 下届会更好">南洋杯负责人:不可控因素多 下届会</a></li>
+
+                        <li><a href="http://dota2.uuu9.com/201610/530337.shtml" target="_blank" title="南洋杯邮轮战Wings专访:专注DOTA比赛">南洋杯邮轮战Wings专访:专注DOTA比</a></li>
+
+                        <li><a href="http://dota2.uuu9.com/201610/529368.shtml" target="_blank" title="EG专访:被一股神秘力量所支配的宇宙哥">EG专访:被一股神秘力量所支配的宇</a></li>
+
+                    </ul>
+                    <a href="http://dota2.uuu9.com/List/List_7614.shtml" target="_blank" class="nrtjmore">查看更多</a>
+                </div>
+            </div>
+        </div>
+        <div class="cl p10 vbg">
+            <div class="title cl">
+                <h2><a href="http://tv.uuu9.com/list.html?gameid=2" target="_blank">大神直播聚合</a></h2><span>游久直播是一款直播聚合引擎,你可以在该系统下获取其他各大平台正在直播的内容,免除平台之间来回反复寻找的苦恼.</span>
+                <em><a href="http://tv.uuu9.com/list.html?gameid=2" target="_blank">查看更多</a></em>
+            </div>
+            <div class="content">
+                <div class="sylive">
+                    <div class="pic-list">
+                        <a href="http://tv.uuu9.com/Video.html?id=1960&amp;cid=5&amp;gid=2" title="全程直播波士顿Major" target="_blank"><img src="http://livepic.huomao.com/58/i_10.jpg?1481165400" alt="全程直播波士顿Major"><p>全程直播波士顿Major</p><span class="shadow"></span><i></i><div class="cl m-5"><span class="r hits">38.51万</span><span class="l vzbname">Oo老队长rOtK</span></div></a><a href="http://tv.uuu9.com/Video.html?id=7467&amp;cid=1&amp;gid=2" title="龙弟弟的直播间" target="_blank"><img src="http://screenshot.dwstatic.com/yysnapshot/8df1b1fa5e828ab69c4b5861fdfb8b7b9f39b192" alt="龙弟弟的直播间"><p>龙弟弟的直播间</p><span class="shadow"></span><i></i><div class="cl m-5"><span class="r hits">8.88万</span><span class="l vzbname">龙弟弟</span></div></a><a href="http://tv.uuu9.com/Video.html?id=716315301&amp;cid=5&amp;gid=2" title="波士顿特锦赛 重播" target="_blank"><img src="http://livepic.huomao.com/10661/i_10.jpg?1481165400" alt="波士顿特锦赛 重播"><p>波士顿特锦赛 重播</p><span class="shadow"></span><i></i><div class="cl m-5"><span class="r hits">3.85万</span><span class="l vzbname">秋季赛主舞台</span></div></a><a href="http://tv.uuu9.com/Video.html?id=1798014595&amp;cid=1&amp;gid=2" title="秋季特锦赛淘汰赛" target="_blank"><img src="http://screenshot.dwstatic.com/yysnapshot/b76329593ac8f2be8e1fe8ae2d39f5cb4efdd4e2" alt="秋季特锦赛淘汰赛"><p>秋季特锦赛淘汰赛</p><span class="shadow"></span><i></i><div class="cl m-5"><span class="r hits">3.07万</span><span class="l vzbname">DOTA2秋季特锦赛</span></div></a><a href="http://tv.uuu9.com/Video.html?id=843964819&amp;cid=5&amp;gid=2" title="【LM】秋季赛全程" target="_blank"><img src="http://livepic.huomao.com/11416/i_10.jpg?1481165400" alt="【LM】秋季赛全程"><p>【LM】秋季赛全程</p><span class="shadow"></span><i></i><div class="cl m-5"><span class="r hits">1.36万</span><span class="l vzbname">浮生、LM</span></div></a><a href="http://tv.uuu9.com/Video.html?id=10806711&amp;cid=6&amp;gid=2" title="波士顿特锦赛淘汰赛首日重播" target="_blank"><img src="http://i5.pdim.gs/45/19ab7ceb92c924301ce4a8625c90393b/w338/h190.jpg" alt="波士顿特锦赛淘汰赛首日重播"><p>波士顿特锦赛淘汰赛首日重播</p><span class="shadow"></span><i></i><div class="cl m-5"><span class="r hits">6919</span><span class="l vzbname">波士顿特锦赛主舞台</span></div></a><a href="http://tv.uuu9.com/Video.html?id=33127776&amp;cid=5&amp;gid=2" title="【大叔】复播：WINGS vs EG" target="_blank"><img src="http://livepic.huomao.com/5792/i_10.jpg?1481165400" alt="【大叔】复播：WINGS vs EG"><p>【大叔】复播：WINGS vs EG</p><span class="shadow"></span><i></i><div class="cl m-5"><span class="r hits">4120</span><span class="l vzbname">憨大叔（冥灯）</span></div></a><a href="http://tv.uuu9.com/Video.html?id=576532370&amp;cid=1&amp;gid=2" title="开黑开黑开黑！！！1" target="_blank"><img src="http://screenshot.dwstatic.com/yysnapshot/3a204e0e0538fb69daeb0cb3ee792e202c938ef5" alt="开黑开黑开黑！！！1"><p>开黑开黑开黑！！！1</p><span class="shadow"></span><i></i><div class="cl m-5"><span class="r hits">3446</span><span class="l vzbname">花开小师妹</span></div></a><a href="http://tv.uuu9.com/Video.html?id=9735349&amp;cid=5&amp;gid=2" title="12月早安！ O(∩_∩)O~~！" target="_blank"><img src="http://livepic.huomao.com/5339/i_10.jpg?1481165400" alt="12月早安！ O(∩_∩)O~~！"><p>12月早安！ O(∩_∩)O~~！</p><span class="shadow"></span><i></i><div class="cl m-5"><span class="r hits">3089</span><span class="l vzbname">叫我大胸姐❣❣</span></div></a><a href="http://tv.uuu9.com/Video.html?id=2151742&amp;cid=3&amp;gid=2" title="小鹿：我回来啦，好久不见~" target="_blank"><img src="https://img1.zhanqi.tv/live/20161208/78926_jXP4G_2016-12-08-10-56-37_big.jpg" alt="小鹿：我回来啦，好久不见~"><p>小鹿：我回来啦，好久不见~</p><span class="shadow"></span><i></i><div class="cl m-5"><span class="r hits">1798</span><span class="l vzbname">小鹿弯弯</span></div></a><a href="http://tv.uuu9.com/Video.html?id=70976584&amp;cid=3&amp;gid=2" title="2016 Dota2波士顿特级锦标赛" target="_blank"><img src="https://img1.zhanqi.tv/live/20161208/111343_Whti8_2016-12-08-10-56-22_big.jpg" alt="2016 Dota2波士顿特级锦标赛"><p>2016 Dota2波士顿特级锦标赛</p><span class="shadow"></span><i></i><div class="cl m-5"><span class="r hits">1662</span><span class="l vzbname">战旗官方频道2</span></div></a><a href="http://tv.uuu9.com/Video.html?id=88593562&amp;cid=5&amp;gid=2" title="Miracle-9000分大神的表演" target="_blank"><img src="http://livepic.huomao.com/4589/i_10.jpg?1481165400" alt="Miracle-9000分大神的表演"><p>Miracle-9000分大神的表演</p><span class="shadow"></span><i></i><div class="cl m-5"><span class="r hits">1230</span><span class="l vzbname">御♥风</span></div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cl p10">
+            <div class="tuleft">
+                <div class="title">
+                    <h2><a href="http://dota2.uuu9.com/tu/" target="_blank">图片站</a></h2><em><a href="http://dota2.uuu9.com/tu/" target="_blank">更多
+
+                </a></em><em><a href="http://dota2.uuu9.com/List/List_7666.shtml" target="_blank">DOTA英雄壁纸</a> - </em><em><a href="http://dota2.uuu9.com/List/List_7667.shtml" target="_blank">玩家漫画</a> - </em>
+                </div>
+                <div class="content">
+
+                    <div class="vbox">
+                        <a href="http://dota2.uuu9.com/201612/534128.shtml" target="_blank" title="波士顿特锦赛现场图赏:LGD与EH选手百态"><img src="http://image.uuu9.com/pcgame/dota2/UploadFiles/201612/201612050548298461.jpg" alt="波士顿特锦赛现场图赏:LGD与EH选手百态"><b></b><p>波士顿特锦赛现场图赏:LGD与EH选手百态
+
+                        </p></a>
+                    </div>
+
+                    <div class="vbox">
+                        <a href="http://dota2.uuu9.com/201612/534076.shtml" target="_blank" title="波士顿特锦赛首日图赏 塞拉迷离的眼神"><img src="http://image.uuu9.com/pcgame/dota2/UploadFiles/201612/201612040100099551.jpg" alt="波士顿特锦赛首日图赏 塞拉迷离的眼神"><b></b><p>波士顿特锦赛首日图赏 塞拉迷离的眼神
+
+                        </p></a>
+                    </div>
+
+                    <div class="vbox">
+                        <a href="http://dota2.uuu9.com/201612/534072.shtml" target="_blank" title="波士顿特锦赛现场图赏 LGD的队标想搞事"><img src="http://image.uuu9.com/pcgame/dota2/UploadFiles/201612/201612032336285641.jpg" alt="波士顿特锦赛现场图赏 LGD的队标想搞事"><b></b><p>波士顿特锦赛现场图赏 LGD的队标想搞事
+
+                        </p></a>
+                    </div>
+
+                    <div class="vbox">
+                        <a href="http://dota2.uuu9.com/201610/531412.shtml" target="_blank" title="秋季赛一图流:IG.V击败LGD获得正赛名额"><img src="http://image.uuu9.com/pcgame/dota2/UploadFiles/201610/201610311756575621.jpg" alt="秋季赛一图流:IG.V击败LGD获得正赛名额"><b></b><p>秋季赛一图流:IG.V击败LGD获得正赛名额
+
+                        </p></a>
+                    </div>
+
+                    <div class="vbox">
+                        <a href="http://dota2.uuu9.com/201610/531348.shtml" target="_blank" title="秋季赛一图流:IG.V与LFY相遇胜者组决赛"><img src="http://image.uuu9.com/pcgame/dota2/UploadFiles/201610/201610302244067961.jpg" alt="秋季赛一图流:IG.V与LFY相遇胜者组决赛"><b></b><p>秋季赛一图流:IG.V与LFY相遇胜者组决赛
+
+                        </p></a>
+                    </div>
+
+                    <div class="vbox">
+                        <a href="http://dota2.uuu9.com/201610/531282.shtml" target="_blank" title="秋季赛一图流:B神惜别舞台 LGD双雄晋级"><img src="http://image.uuu9.com/pcgame/dota2/UploadFiles/201610/201610300117265001.jpg" alt="秋季赛一图流:B神惜别舞台 LGD双雄晋级"><b></b><p>秋季赛一图流:B神惜别舞台 LGD双雄晋级
+
+                        </p></a>
+                    </div>
+
+                    <div class="vbox">
+                        <a href="http://dota2.uuu9.com/201610/531242.shtml" target="_blank" title="秋季赛一图流:黑马EH.K暂居小组第二"><img src="http://image.uuu9.com/pcgame/dota2/UploadFiles/201610/201610282307221561.jpg" alt="秋季赛一图流:黑马EH.K暂居小组第二"><b></b><p>秋季赛一图流:黑马EH.K暂居小组第二
+
+                        </p></a>
+                    </div>
+
+                    <div class="vbox">
+                        <a href="http://dota2.uuu9.com/201608/526060.shtml" target="_blank" title="GL漫画：TI6大总结 剑圣哈啤GG至宝套"><img src="http://image.uuu9.com/pcgame/dota2/UploadFiles/201608/201608170939227711.jpg" alt="GL漫画：TI6大总结 剑圣哈啤GG至宝套"><b></b><p>GL漫画：TI6大总结 剑圣哈啤GG至宝套
+
+                        </p></a>
+                    </div>
+
+                    <div class="vbox">
+                        <a href="http://dota2.uuu9.com/201608/525845.shtml" target="_blank" title="Wings夺冠现场图赏：Wings粉丝仰天长啸"><img src="http://image.uuu9.com/pcgame/dota2/UploadFiles/201608/201608141303251611.jpg" alt="Wings夺冠现场图赏：Wings粉丝仰天长啸"><b></b><p>Wings夺冠现场图赏：Wings粉丝仰天长啸
+
+                        </p></a>
+                    </div>
+
+                    <div class="vbox">
+                        <a href="http://dota2.uuu9.com/201608/525827.shtml" target="_blank" title="TI6败者总决赛DC VS EG现场图赏"><img src="http://image.uuu9.com/pcgame/dota2/UploadFiles/201608/201608140609005831.jpg" alt="TI6败者总决赛DC VS EG现场图赏"><b></b><p>TI6败者总决赛DC VS EG现场图赏
+
+                        </p></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="wsright">
+                <div class="title"><a target="_blank" href="http://dota.uuu9.com/List_991.shtml">硬件外设</a><em><a target="_blank" href="http://dota.uuu9.com/List_991.shtml">更多</a></em></div>
+                <div class="content p10">
+
+                <a href="http://dota.uuu9.com/201611/127931.shtml" target="_blank" title="赛睿APEX M650电竞专用机械键盘首发"><img src="http://image3.uuu9.com/war3/dota/UploadFiles_5254/201611/201611091221406541.jpg" alt="赛睿APEX M650电竞专用机械键盘首发"></a>
+                <h2><a href="http://dota.uuu9.com/201611/127931.shtml" target="_blank">赛睿APEX M650电竞专用机械键</a></h2>
+                <p>赛睿APEX M650电竞专用机械键盘首发<a href="http://dota.uuu9.com/201611/127931.shtml" target="_blank">[查看详细]</a></p>
+
+                <ul class="wslist">
+
+                    <li><a href="http://dota.uuu9.com/201611/127805.shtml" target="_blank" title="赛睿发布APEX M650电竞机械键盘">赛睿发布APEX M650电竞机械键盘</a></li>
+
+                    <li><a href="http://dota2.uuu9.com/201609/527141.shtml" target="_blank" title="TBKB宣布Classic榜 young机械键盘上市">TBKB宣布Classic榜 young机械键盘上市</a></li>
+
+                    <li><a href="http://dota.uuu9.com/201608/126131.shtml" target="_blank" title="无线游戏耳机赛睿Seberia 840携蓝牙登场">无线游戏耳机赛睿Seberia 840携蓝牙登场</a></li>
+
+                    <li><a href="http://dota.uuu9.com/201607/125451.shtml" target="_blank" title="电竞王者 赛睿旗舰鼠标首发限量抢购">电竞王者 赛睿旗舰鼠标首发限量抢购</a></li>
+
+                </ul>
+            </div>
+                <div class="content p10" style="display:none;">
+
+                    <a href="http://dota2.uuu9.com/201503/488351.shtml" target="_blank" title="《刀塔往事》第六十九回：票选秀场"><img src="http://image3.uuu9.com/images/nopic.gif" alt="《刀塔往事》第六十九回：票选秀场"></a>
+                    <h2><a href="http://dota2.uuu9.com/201503/488351.shtml" target="_blank">《刀塔往事》第六十九回：票选秀场</a></h2>
+                    <p><a href="http://dota2.uuu9.com/201503/488351.shtml" target="_blank">[查看详细]</a></p>
+
+                    <ul class="wslist">
+
+                        <li><a href="http://dota2.uuu9.com/201501/484862.shtml" target="_blank" title="[攻略] 我教职业选手打蜘蛛 育母蜘蛛攻略">[攻略] 我教职业选手打蜘蛛 育母蜘蛛攻略</a></li>
+
+                        <li><a href="http://dota2.uuu9.com/201412/484303.shtml" target="_blank" title="[心得] 分析:火枪输出最优出装顺序的计算">[心得] 分析:火枪输出最优出装顺序的计算</a></li>
+
+                        <li><a href="http://dota2.uuu9.com/201412/484292.shtml" target="_blank" title="[心得] win8系统可以输入中文的解决方法">[心得] win8系统可以输入中文的解决方法</a></li>
+
+                        <li><a href="http://dota2.uuu9.com/201412/484200.shtml" target="_blank" title="[心情] 不知天堂有没有dota 愿鱼人哥安息">[心情] 不知天堂有没有dota 愿鱼人哥安息</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer footer2">
+        <div class="u9wotl p10">
+            <div class="img"><a href="http://moba.uuu9.com/thread-4427604-1-1.html" target="_blank"><img src="http://image.uuu9.com/pcgame/dota2/UploadFiles/201602/201602161132556041.jpg"></a></div>
+            <div class="text">
+                <h2><a href="http://moba.uuu9.com/thread-4427604-1-1.html" target="_blank">【游久窝】刀塔U基站 进群roll套装送妹纸！</a></h2>
+                <p>每个游久本地官方群，群管都有妹子！游久官方群放心可靠！DOTA/DOTA2信仰粉多多益善游久届时线下福利活动群内通知！可以谈恋爱、搞基、百合。线下dotaer们的狂欢，网吧开黑顿时幸福了<a href="http://moba.uuu9.com/thread-4427604-1-1.html" target="_blank">【查看详细】</a></p>
+            </div>
+            <div class="qqlist">
+                <ul>
+                    <li>游久窝-刀塔U基西安站 QQ:119853250  群管：饭饭酱</li>
+                    <li>游久窝-刀塔U基上海站 QQ:540838954  群管：MIK</li>
+                    <li>游久窝-刀塔U基广东站 QQ:164687267   群管：爱画画的晓</li>
+                    <li>游久窝-刀塔U基北京站 QQ:540892765   群管：jwillx</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_text cl">
+            <dl>
+                <dd><a target="_blank" href="http://dota2.uuu9.com/">-首页-</a></dd>
+                <dd><a target="_blank" href="http://dota2.uuu9.com/">DOTA2首页</a></dd>
+                <dd><a target="_blank" href="http://dota2.uuu9.com/List/List_7598.shtml">新闻中心 </a></dd>
+                <dd><a target="_blank" href="http://dota2.uuu9.com/v/">游戏视频</a></dd>
+                <dd><a target="_blank" href="http://dota2.uuu9.com/List/List_7606.shtml">专题企划</a></dd>
+                <dd><a target="_blank" href="http://dota2.uuu9.com/201208/89829.shtml">游戏下载</a></dd>
+            </dl>
+            <dl>
+                <dd><a href="http://dota2.uuu9.com/List/List_844.shtml" target="_blank">-新闻资讯-</a></dd>
+                <dd><a target="_blank" href="http://dota2.uuu9.com/List/List_7610.shtml">攻略心得</a></dd>
+                <dd><a target="_blank" href="http://dota2.uuu9.com/List/List_7609.shtml">新闻资讯</a></dd>
+                <dd><a target="_blank" href="http://dota2.uuu9.com/List/List_7612.shtml">官方资讯</a></dd>
+                <dd><a target="_blank" href="http://dota.uuu9.com/List_987.shtml">每日屌报</a></dd>
+                <dd><a target="_blank" href="http://dota2.uuu9.com/List/List_7614.shtml">游戏专访</a></dd>
+            </dl>
+            <dl>
+                <dd><a target="_blank" href="http://dota2.uuu9.com/v/">-游戏视频-</a></dd>
+                <dd><a target="_blank" href="http://dota2.uuu9.com/List/List_7617.shtml">名嘴解说</a></dd>
+                <dd><a target="_blank" href="http://dota2.uuu9.com/List/List_7639.shtml">精彩集锦</a></dd>
+                <dd><a target="_blank" href="http://dota2.uuu9.com/List/List_7650.shtml">比赛战事</a></dd>
+                <dd><a target="_blank" href="http://dota2.uuu9.com/List/List_7662.shtml">推荐视频</a></dd>
+                <dd><a target="_blank" href="http://tv.uuu9.com/?game=dota2">直播聚合</a></dd>
+            </dl>
+            <dl>
+                <dd><a target="_blank" href="http://es.dota2.uuu9.com/">-热门赛事-</a></dd>
+                <dd><a target="_blank" href="http://dota2.uuu9.com/winter/">上海特锦赛</a></dd>
+                <dd><a target="_blank" href="http://es.dota2.uuu9.com/Game/163.html">TS6</a></dd>
+                <dd><a target="_blank" href="http://es.dota2.uuu9.com/Game/152.html">DPL职业联赛</a></dd>
+                <dd><a target="_blank" href="http://dota2.uuu9.com/zt/acels/">ACE定级赛</a><a></a></dd><a>
+            </a><dd><a></a><a target="_blank" href="http://dota2.uuu9.com/autumn/">DOTA2秋季赛</a></dd>
+            </dl>
+            <dl>
+                <dd><a href="http://dota2.uuu9.com/List/List_7601.shtml" target="_blank">-游戏资料-</a></dd>
+                <dd><a target="_blank" href="http://db.dota2.uuu9.com/">英雄数据库</a></dd>
+                <dd><a target="_blank" href="http://db.dota2.uuu9.com/goods/list">物品数据库</a></dd>
+                <dd><a target="_blank" href="http://dota2.uuu9.com/201208/89829.shtml">游戏下载</a></dd>
+                <dd><a target="_blank" href="http://dota2.uuu9.com/tga/1.html">热门搜索</a></dd>
+                <dd><a target="_blank" href="http://dota2.uuu9.com/List/List_7771.shtml">DOTA2百科</a></dd>
+            </dl>
+            <dl>
+                <dd><a href="http://moba.uuu9.com/forum.php" target="_blank">-玩家论坛-</a></dd>
+                <dd><a target="_blank" href="http://moba.uuu9.com/forum-18-1.html">DOTA区</a></dd>
+                <dd><a target="_blank" href="http://moba.uuu9.com/forum-4-1.html">DOTA2区</a></dd>
+                <dd><a target="_blank" href="http://moba.uuu9.com/forum-220-1.html">DOTA2RPG</a></dd>
+                <dd><a target="_blank" href="http://moba.uuu9.com/forum-50-1.html">博彩中心</a></dd>
+                <dd><a target="_blank" href="http://moba.uuu9.com/forum-12-1.html">超级助手</a></dd>
+            </dl>
+            <dl>
+                <dd><a href="http://dota.uuu9.com/" target="_blank">-DOTA资讯-</a></dd>
+                <dd><a href="http://dota.uuu9.com/v/">DOTA视频站</a></dd>
+                <dd><a href="http://dota.uuu9.com/List_329.shtml">DOTA英雄攻略</a></dd>
+                <dd><a href="http://dota.uuu9.com/tu/">DOTA图片欣赏</a></dd>
+                <dd><a href="http://dota.uuu9.com/xz/">DOTA下载站</a></dd>
+                <dd><a href="http://dota.uuu9.com/List_222.shtml">DOTA新闻资讯</a></dd>
+            </dl>
+        </div>
+        <div class="linkbox">
+            友情链接:
+            <a target="_blank" href="http://dota.uuu9.com/">DOTA专题站</a> |
+            <a target="_blank" href="http://lol.uuu9.com/">英雄联盟</a> |
+            <a target="_blank" href="http://dota2.sgamer.com/">超玩dota2</a> |
+            <a target="_blank" href="http://fight.pcgames.com.cn/dota2/">太平洋DOTA2</a> |
+            <a target="_blank" href="http://dota2.yzz.cn/">叶子猪dota2</a> |
+            <a href="http://dota2.178.com/" target="_blank">178 DOTA2</a> |
+            <a href="http://dota2.tgbus.com/" target="_blank">Tgbus DOTA2</a> |
+            <a href="http://csgo.uuu9.com/" target="_blank">CS:GO</a> |
+            <a href="http://ow.uuu9.com/" target="_blank">守望先锋</a> |
+            <a href="http://www.vpgame.com/" target="_blank">VPGAME</a> |
+        </div>
+    </div>
+</div>
+</div>
+<div class="closebutton"></div>
+<script>
+    $(".closebutton").click(function () {
+        $(window).scrollTop(0)
+    })
+</script>
+</body>
+</html>
